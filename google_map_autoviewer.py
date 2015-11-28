@@ -9,7 +9,7 @@
 import pyautogui
 import time
 import subprocess
-import quartz
+# import quartz
 
 Xmax,Ymax=pyautogui.size( )
 # Open a web browser
@@ -21,10 +21,8 @@ location_on_map='https://www.google.cz/maps/@43.2048071,27.9108268,3a,75y,357.62
 
 subprocess.Popen([browser1,location_on_map])
 
-
 # Making loop for several mouse clicks
 while True:
     # Move the mouse cursor to X,Y coordinates
     pyautogui.click(0.5*Xmax, 0.65*Ymax)
     time.sleep(3)
-
