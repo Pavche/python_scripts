@@ -1,21 +1,16 @@
 #!/bin/python
 
-# Open Google maps on Varna, Bulgaria
-# How to open the browser?
-# Open street view
-# How to set coordinates on Google maps?
-# Position the mouse cursor at coordinates (0.5*Xmax, 0.75*Ymax
+# This script shows largest cities in Bulgaria on Google maps
+# using "street view" mode
 
-# GUI automatization, works under Linux, paritially working unider Win64, not working under MAC OS X 10.8
-import pyautogui
-#GUI automatization works under Windows, Linux
+# GUI automatization works under Windows, Linux
+# See requirements at https://github.com/msanders/autopy/#readme
 import autopy
 import time
 import platform # Info about computer platform uder which the script is run
 import os
 import subprocess
 import sys
-# import quartz #For GUI under OS X on iMAC
 
 # List of web browsers under various OS
 # '/usr/bin/firefox' #For Linux Fedora
