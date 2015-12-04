@@ -6,6 +6,7 @@
 # GUI automatization works under Windows, Linux
 # See requirements at https://github.com/msanders/autopy/#readme
 import autopy
+import pyautogui
 import time
 import platform # Info about computer platform uder which the script is run
 import os
@@ -39,13 +40,13 @@ choice=0
 while choice not in range(1,6):
       print('Cities in Bulgaria\n1. Sofia\n2. Plovdiv\n3. Stara Zagora\n4. Burgas\n5. Varna')
       print('Q for quit')
+      choice=raw_input('Your choice is: ')
+      if choice=='q' or choice=='Q':
+         sys.exit(0) 
       try:
-      	  choice=raw_input('Your choice is: ')
-	  if choice=='q' or choice=='Q':
-		sys.exit(0) 
-	  choice=int(choice) # Try to read as a number
-      except ValueError:
-          print "Not a number"
+         choice=int(choice) # Try to read as a number
+      except:
+         print('Not a number')
 
 # Start point on Google maps
 if choice==1:
@@ -68,12 +69,16 @@ subprocess.Popen([browser,location_on_map])
 time.sleep(10)
 
 # How to start browser in maximized window?
-# For Firefox press F11
-full_screen_key=autopy.key.K_F11
-autopy.key.tap(full_screen_key)
+# For browsers linke Firefox, Chrome, Midori under Linux press F11
+# For browsers linke Firefox, Chrome under Windows press F11
+if os_platform=='Linux' or os_platform=='Windows':
+   pyautogui.press('f11')
 
 # Xmax,Ymax=pyautogui.size( )
 Xmax,Ymax=autopy.screen.get_size()
+# This function works on a single display only, when using multiple monitors
+# the script does not function properly
+
 
 # Making loop for several mouse clicks
 while True:
@@ -82,3 +87,7 @@ while True:
  	autopy.mouse.smooth_move(int(0.5*Xmax),int(0.65*Ymax))
  	autopy.mouse.click()
  	time.sleep(3)
+ 	
+# Written by Pavlin Georgiev
+# November 2015
+# Last update: 3 Dec 2015
