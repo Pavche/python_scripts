@@ -10,6 +10,7 @@ import platform # Info about computer platform uder which the script is run
 import os
 import subprocess
 import sys
+import webbrowser
 
 # List of web browsers under various OS
 # '/usr/bin/firefox' #For Linux Fedora
@@ -24,14 +25,13 @@ os_replease=platform.release()
 os_ver=platform.version()
 
 # What is the default browser? Open with it Google maps.
-# The following lines work under Linux, but not under Windows
-# browser=os.getenv('BROWSER')
-if os_platform=='Windows':
-   browser='C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe'
-elif os_platform=='Linux':
-   browser=os.getenv('BROWSER')
-else:
-   browser='UNKNOWN'
+# Varinat 1 - from environment variables from the OS
+#if os_platform=='Windows':
+#   browser='C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe'
+#elif os_platform=='Linux':
+#   browser=os.getenv('BROWSER')
+#else:
+#   browser='UNKNOWN'
 
 
 # Coordinates on Google maps in Bulgaria
@@ -69,7 +69,10 @@ else:
    print('Invalid choice. Exiting with error.')
    sys.exit(1)
 
-subprocess.Popen([browser,location_on_map])
+# Variant 1 open the web browser
+# subprocess.Popen([browser,location_on_map])
+# Variant 2 open the web browser
+webbrowser.open_new(location_on_map)
 
 # Wait for 10 sec till the web page is fully loaded
 time.sleep(10)
@@ -99,4 +102,4 @@ while True:
  	
 # Written by Pavlin Georgiev
 # November 2015
-# Last update: 3 Dec 2015
+# Last update: 6 Dec 2015
