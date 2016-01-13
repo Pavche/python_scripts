@@ -8,17 +8,6 @@ import openpyxl
 # Find all lines containing of subnet but not subnet-mask, no comment mark "#" before "subnet"
 # Write them into a temp file /tmp/dhcpd.tmp
 
-# Stage 2
-# Create an Excel workbook with sheet "Network IDs"
-# Select "Sheet1", cell A1
-# Open temp file for reading
-# a) omit word "subnet"
-# b) write the next word (network ID) to the first column A2
-# c) omit the work "netmask"
-# d) write the next word (subnet mask) to the second column B2
-# Increase the row counter
-# Repeat the loop
-
 DHCP_CFG='/home/georgiev/dhcpd.conf'
 TMP_FILE='/tmp/dhcpd.tmp'
 
@@ -44,15 +33,15 @@ def stage_1():
         f2.close()
     
 # Stage 2
-XLSX_FILE='/home/georgiev/test_dhcp_cfg.xlsx'
-wb = openpyxl.Workbook()
-ws = wb.active
-ws.title = "Network IDs"
-message = 'Fist steps in creating Excel workbooks with Python'
-ws['A1'] = message
-wb.save(XLSX_FILE)
-print 'Excel workbook '+XLSX_FILE+' was created.'
-#except:
-#    print 'Problem when creating a new Excel workbook.'
+# Create an Excel workbook with sheet "Network IDs"
+# Select "Sheet1", cell A1
+# Open temp file for reading
+# a) omit word "subnet"
+# b) write the next word (network ID) to the first column A2
+# c) omit the work "netmask"
+# d) write the next word (subnet mask) to the second column B2
+# Increase the row counter
+# Repeat the loop
+
 
 exit()
