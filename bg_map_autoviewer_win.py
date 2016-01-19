@@ -47,8 +47,9 @@ BG_Varna_map={
 'railway_station':'https://www.google.com/maps/@43.1986025,27.9119716,3a,75y,147.52h,85.69t/data=!3m6!1e1!3m4!1slY1pM-SURUu_cfHg2MU2pA!2e0!7i13312!8i6656!6m1!1e1',
 'central_post':'https://www.google.com/maps/@43.206677,27.910787,3a,75y,245.92h,88.56t/data=!3m6!1e1!3m4!1sYLkH3-V6bJB1IlYU1CwHbA!2e0!7i13312!8i6656',
 'harbor':'https://www.google.com/maps/@43.1947194,27.9215336,3a,75y,189.58h,82.41t/data=!3m6!1e1!3m4!1szT0ajbfXUVR8KAVD4mzv-A!2e0!7i13312!8i6656',
-'festival_congress_center':'https://www.google.com/maps/@43.2041814,27.9215867,3a,90y,69.92h,89.87t/data=!3m6!1e1!3m4!1sHiRr3RGiWFDL6R5uBU1ANg!2e0!7i13312!8i6656'
-} # 6 locations in Varna
+'festival_congress_center':'https://www.google.com/maps/@43.2041814,27.9215867,3a,90y,69.92h,89.87t/data=!3m6!1e1!3m4!1sHiRr3RGiWFDL6R5uBU1ANg!2e0!7i13312!8i6656',
+'baba_Dzanka':'https://www.google.com/maps/@43.2102584,27.9104829,3a,75y,260.36h,81.26t/data=!3m6!1e1!3m4!1s6JfqH0FS1xtkYaKeFXg-6w!2e0!7i13312!8i6656!6m1!1e1'
+} # 7 locations in Varna
 
 # Choose your destination on Google maps
 choice=0
@@ -74,8 +75,15 @@ elif choice==4:
    location_on_map=BG_Burgas_map
 elif choice==5:
    #Chosing a start point from 6 locations in a random manner
-   start_point={1:'cathedral',2:'center',3:'railway_station',4:'central_post',5:'harbor',6:'festival_congress_center'}
-   pad = start_point[random.randint(1,6)]
+   start_point={
+	1:'cathedral',
+	2:'center',
+	3:'railway_station',
+	4:'central_post',
+	5:'harbor',
+	6:'festival_congress_center',
+	7:'baba_Dzanka'}
+   pad = start_point[random.randint(1,7)]
    location_on_map=BG_Varna_map[pad]
 else:
    print('Invalid choice. Exiting with error.')
