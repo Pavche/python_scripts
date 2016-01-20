@@ -48,8 +48,14 @@ BG_Varna_map={
 'central_post':'https://www.google.com/maps/@43.206677,27.910787,3a,75y,245.92h,88.56t/data=!3m6!1e1!3m4!1sYLkH3-V6bJB1IlYU1CwHbA!2e0!7i13312!8i6656',
 'harbor':'https://www.google.com/maps/@43.1947194,27.9215336,3a,75y,189.58h,82.41t/data=!3m6!1e1!3m4!1szT0ajbfXUVR8KAVD4mzv-A!2e0!7i13312!8i6656',
 'festival_congress_center':'https://www.google.com/maps/@43.2041814,27.9215867,3a,90y,69.92h,89.87t/data=!3m6!1e1!3m4!1sHiRr3RGiWFDL6R5uBU1ANg!2e0!7i13312!8i6656',
-'baba_Dzanka':'https://www.google.com/maps/@43.2102584,27.9104829,3a,75y,260.36h,81.26t/data=!3m6!1e1!3m4!1s6JfqH0FS1xtkYaKeFXg-6w!2e0!7i13312!8i6656!6m1!1e1'
-} # 7 locations in Varna
+'baba_Dzanka':'https://www.google.com/maps/@43.2102584,27.9104829,3a,75y,260.36h,81.26t/data=!3m6!1e1!3m4!1s6JfqH0FS1xtkYaKeFXg-6w!2e0!7i13312!8i6656!6m1!1e1',
+'Central_bus_station':'https://www.google.com/maps/@43.2158997,27.8956269,3a,75y,118.49h,85.29t/data=!3m6!1e1!3m4!1s8SuC_QOCCIey2VdhoO1YaA!2e0!7i13312!8i6656',
+'North__entry_point':'https://www.google.com/maps/@43.2231588,27.8686577,3a,75y,106.75h,76.69t/data=!3m6!1e1!3m4!1sAFJsRd2vh5KMDo555E3mXg!2e0!7i13312!8i6656',
+'South-east_entry_point':'https://www.google.com/maps/@43.185381,27.8749907,3a,75y,70.14h,70.85t/data=!3m6!1e1!3m4!1s65iz3MLdPVbRXlc4qxvmJA!2e0!7i13312!8i6656',
+'3rd_March_bul':'https://www.google.com/maps/@43.2427395,27.8490392,3a,75y,95.38h,83.01t/data=!3m6!1e1!3m4!1sZEeucMlEWsRcRzMMfJ76rw!2e0!7i13312!8i6656',
+'Slivnica_bul':'https://www.google.com/maps/@43.2291763,27.8687948,3a,75y,107.48h,84.37t/data=!3m6!1e1!3m4!1sxSvNfzMz_jWfU3d6Rphk9g!2e0!7i13312!8i6656',
+'Maritime_garden':'https://www.google.com/maps/@43.1979254,27.9201321,3a,75y,44.67h,81.77t/data=!3m6!1e1!3m4!1spZceN5KqXAyHoh-0O5W5Zg!2e0!7i13312!8i6656'
+} # 13 locations in Varna
 
 # Choose your destination on Google maps
 choice=0
@@ -82,8 +88,15 @@ elif choice==5:
 	4:'central_post',
 	5:'harbor',
 	6:'festival_congress_center',
-	7:'baba_Dzanka'}
-   pad = start_point[random.randint(1,7)]
+	7:'baba_Dzanka',
+	8:'Central_bus_station',
+	9:'North__entry_point',
+	10:'South-east_entry_point',
+	11:'3rd_March_bul',
+	12:'Slivnica_bul',
+	13:'Maritime_garden'
+	}
+   pad = start_point[random.randint(1,13)]
    location_on_map=BG_Varna_map[pad]
 else:
    print('Invalid choice. Exiting with error.')
