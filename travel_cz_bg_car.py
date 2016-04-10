@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # This script calculates the price of travelling
 # by car from CZ,Brno to BG,Varna
+import os, subprocess
+import time
 
 bg_varna_facebook_url='https://www.facebook.com/krasivavarna/photos'
 bg_varna_map_url='https://www.google.cz/maps/place/Varna,+Bulharsko/@43.2047556,27.8028249,6z/data=!4m2!3m1!1s0x40a4538baaf3d7a1:0x5727941c71a58b7c?hl=cs'
@@ -17,16 +19,16 @@ road_taxes = {
 	'RO-1m'  : 7,
 	'BG-1m'  : 15 
 		}
-road_taxes_total = 0
+total_road_taxes = 0
 currency = 'EUR'
 for country, price in road_taxes.iteritems():
-    road_taxes_total += price
+    total_road_taxes += price
 
 # For every car is different
 # This is for Hyundai i30 cw
 avg_fuel_consum = {
     'petrol' : 7, # Litters/100 km
-    'gas' : 9, # Litters/100 km
+    'gas' : 10, # Litters/100 km
     'diesel' : 6 # Litters/100 km
     }
 fuel_price = { # EUR for 1 litter and prices are variable
@@ -39,8 +41,10 @@ distance = 1413 # km
 
 # User interface
 # ------------------------------------------------------------------------
+os.system('clear') # Clear screen in Linux
 print("Travelling by car\n")
-print("Route:\n%s\n" % route_str)
+print("Route:\n%s" % route_str)
+print("and RETURN.\n")
 
 # Ask for fuel type
 choice = 0
@@ -66,14 +70,16 @@ while True:
 # Ask for avg fuel consumption [L/100 km]
 # Ask for fuel price
 # Both directions
-fuel_consum_total = ( distance * (avg_fuel_consum[fuel_type]/100.00) ) * 2 
+total_fuel_consum = ( distance * (avg_fuel_consum[fuel_type]/100.00) ) * 2 
 
-print("Road taxes (all) : %s %s" % \
-    (road_taxes_total, currency) )
-print("Travel distance  : %s km in both directions" % (2*distance) )
-print("Fuel consumption : %s [L/100 km] of %s average" % \
+print("Road taxes (all)         : %s %s" % \
+    (total_road_taxes, currency) )
+print("Travel distance          : %s km in both directions" % (2*distance) )
+print("Average fuel consumption : %s [L/100 km] of %s" % \
     (avg_fuel_consum[fuel_type], fuel_type) )
-print("Fuel consumption : %s L of %s total" % \
-    (fuel_consum_total, fuel_type) )
-print("Fuel price       : %s %s" % \
-    ( round((fuel_consum_total * fuel_price[fuel_type]), 2), currency ) )
+print("Fuel consumption         : %s L of %s total" % \
+    (total_fuel_consum, fuel_type) )
+total_fuel_price = round((total_fuel_consum * fuel_price[fuel_type]), 2)
+print("Fuel price               : %s %s" % \
+    ( total_fuel_price, currency ) )
+print("Total                    : %s %s" % ( (total_fuel_price+total_road_taxes),currency) )
