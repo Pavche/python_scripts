@@ -131,7 +131,7 @@ while True:
         # Variant 2 - using automatization with PyAutoGUI
 	pyautogui.moveTo(0.5*Xmax, 0.65*Ymax,duration=1)
 	pyautogui.click()
-	time.sleep(3)
+	time.sleep(1.5)
  	
 # Written by Pavlin Georgiev
 # November 2015

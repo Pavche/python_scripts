@@ -5,7 +5,7 @@
 
 # Make an dictionary in Python of URLs on Facebook of people I would like to see.
 # The person s name is the key, the URL is the value
-facebook_urls={'Dragan Georgiev':'https://www.facebook.com/dragan.georgiev.7','Dena Abova':'https://www.facebook.com/dena.abova','German Tepavicharov':'https://www.facebook.com/german.tepavicharov'}
+facebook_urls={'Dragan Georgiev':'https://www.facebook.com/dragan.georgiev.7','Dena Abova':'https://www.facebook.com/dena.abova','German Tepavicharov':'https://www.facebook.com/german.tepavicharov','Darina Laleva':'https://www.facebook.com/darina.laleva'}
 photo_view_trigger='https://www.facebook.com/photo.php'
 delay_between_photos=5
 
@@ -21,14 +21,14 @@ import pyautogui
 import time
 
 # Open the default browser with url www.facebook.com
-webbrowser.open(facebook_urls["Dragan Georgiev"])
+webbrowser.open(facebook_urls["Darina Laleva"])
 
 
 # Pause of 3 seconds
 time.sleep(3)
 
 # Go to photo album
-webbrowser.open(facebook_urls["Dragan Georgiev"]+"/photos")
+webbrowser.open(facebook_urls["Darina Laleva"]+"/photos")
 
 # Pause of 3 seconds
 time.sleep(3)
