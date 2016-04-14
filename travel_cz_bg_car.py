@@ -14,10 +14,10 @@ route_str='CZ(Brno)\nSK(Bratislava)\nHU(Budapest)\nRO(Arad)\nRO(Bucarest)\nBG(Va
 # Prices are for 2016 in EUR and some of them are approximate
 road_taxes = {
 	'CZ-1m'  : 17,
-	'SK-1m'  : 14, 
-	'HU-1m'  : 16, 
+	'SK-1m'  : 14,
+	'HU-1m'  : 16,
 	'RO-1m'  : 7,
-	'BG-1m'  : 15 
+	'BG-1m'  : 15
 		}
 total_road_taxes = 0
 currency = 'EUR'
@@ -42,7 +42,7 @@ distance = 1413 # km
 # User interface
 # ------------------------------------------------------------------------
 os.system('clear') # Clear screen in Linux
-print("Travelling by car\n")
+print("TRAVELLING FROM BRNO TO VARNA BY CAR\n")
 print("Route:\n%s" % route_str)
 print("and RETURN.\n")
 
@@ -66,20 +66,20 @@ while True:
             print 'Invalid choice.'
     except ValueError:
         print 'Invalid choice.'
-        
+
 # Ask for avg fuel consumption [L/100 km]
 # Ask for fuel price
 # Both directions
-total_fuel_consum = ( distance * (avg_fuel_consum[fuel_type]/100.00) ) * 2 
+total_fuel_consum = ( distance * (avg_fuel_consum[fuel_type]/100.00) ) * 2
 
 print("Road taxes (all)         : %s %s" % \
     (total_road_taxes, currency) )
 print("Travel distance          : %s km in both directions" % (2*distance) )
 print("Average fuel consumption : %s [L/100 km] of %s" % \
     (avg_fuel_consum[fuel_type], fuel_type) )
-print("Fuel consumption         : %s L of %s total" % \
+print("Total fuel consumption   : %s L of %s" % \
     (total_fuel_consum, fuel_type) )
 total_fuel_price = round((total_fuel_consum * fuel_price[fuel_type]), 2)
 print("Fuel price               : %s %s" % \
     ( total_fuel_price, currency ) )
-print("Total                    : %s %s" % ( (total_fuel_price+total_road_taxes),currency) )
+print("Total cost               : %s %s" % ( (total_fuel_price+total_road_taxes),currency) )
