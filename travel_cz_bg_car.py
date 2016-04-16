@@ -4,22 +4,23 @@
 import os, subprocess
 import time
 
-bg_varna_facebook_url='https://www.facebook.com/krasivavarna/photos'
-bg_varna_map_url='https://www.google.cz/maps/place/Varna,+Bulharsko/@43.2047556,27.8028249,6z/data=!4m2!3m1!1s0x40a4538baaf3d7a1:0x5727941c71a58b7c?hl=cs'
-route_brno_bratislava_budapest_arad_varna_url='https://mapy.cz/zakladni?planovani-trasy&x=22.2552947&y=45.7653096&z=7&rc=9mMT8xTuNNuMTSawrsjA&rs=muni&rs=osmm&ri=5740&ri=57908&mrp={%22c%22%3A1%2C%22tt%22%3A1}&mrp={%22c%22%3A1%2C%22tt%22%3A1}&rt=&rt='
-route_str='CZ(Brno)\nSK(Bratislava)\nHU(Budapest)\nRO(Arad)\nRO(Bucarest)\nBG(Varna)'
+# Burgas on the map
+googles_map_url='https://www.google.cz/maps/place/Burgas,+Bulharsko/@44.2665119,19.5417992,6z/data=!4m2!3m1!1s0x40a69266f9fc9d91:0x400a01269bf4df0?hl=cs'
+# Route Brno-Bratislava-Budapest-Belgrade-Sofia-Burgas
+route_url='https://www.google.cz/maps/dir/Brno/Burgas,+Bulharsko/@45.6055514,16.9457368,6z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x4712943ac03f5111:0x400af0f6614b1b0!2m2!1d16.6068371!2d49.1950602!1m5!1m1!1s0x40a69266f9fc9d91:0x400a01269bf4df0!2m2!1d27.4626361!2d42.5047926?hl=cs'
+route_str='Brno,CZ\nBratislava,SK\nBudapest,HU\nBelgrade,SRB\nSofia,BG\nBurgas,BG'
 
 # Vignettes and road taxes
-# Country(BG,CZ,RO,SK), period (1 week, 1 month, 1 year)
+# Countries: CZ,SK,HU,BG period: 1 month
+# In Serbia you pay per highway (about 20 Eur in both directions)
 # Prices are for 2016 in EUR and some of them are approximate
 road_taxes = {
 	'CZ-1m'  : 17,
 	'SK-1m'  : 14,
 	'HU-1m'  : 16,
-	'RO-1m'  : 7,
 	'BG-1m'  : 15
 		}
-total_road_taxes = 0
+total_road_taxes = 20 # Initial value considering taxes in Serbia
 currency = 'EUR'
 for country, price in road_taxes.iteritems():
     total_road_taxes += price
@@ -36,13 +37,13 @@ fuel_price = { # EUR for 1 litter and prices are variable
     'gas' : 0.44,
     'diesel' : 1.00
     }
-# Travel distance Brno - Varna
-distance = 1413 # km
+# Travel distance Brno - Burgas
+distance = 1470 # km
 
 # User interface
 # ------------------------------------------------------------------------
 os.system('clear') # Clear screen in Linux
-print("TRAVELLING FROM BRNO TO VARNA BY CAR\n")
+print("TRAVELLING FROM BRNO TO BURGAS BY CAR\n")
 print("Route:\n%s" % route_str)
 print("and RETURN.\n")
 
