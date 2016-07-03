@@ -3,10 +3,13 @@
 # by car from CZ,Brno to BG,Varna
 import os, subprocess
 import time
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
 bg_varna_facebook_url='https://www.facebook.com/krasivavarna/photos'
-bg_varna_map_url='https://www.google.cz/maps/place/Varna,+Bulharsko/@43.2047556,27.8028249,6z/data=!4m2!3m1!1s0x40a4538baaf3d7a1:0x5727941c71a58b7c?hl=cs'
-route_brno_bratislava_budapest_arad_varna_url='https://mapy.cz/zakladni?planovani-trasy&x=22.2552947&y=45.7653096&z=7&rc=9mMT8xTuNNuMTSawrsjA&rs=muni&rs=osmm&ri=5740&ri=57908&mrp={%22c%22%3A1%2C%22tt%22%3A1}&mrp={%22c%22%3A1%2C%22tt%22%3A1}&rt=&rt='
+# Varna on Google maps
+map_url='https://www.google.cz/maps/place/Varna,+Bulharsko/@43.2047556,27.8028249,6z/data=!4m2!3m1!1s0x40a4538baaf3d7a1:0x5727941c71a58b7c?hl=cs'
+route_url='https://mapy.cz/zakladni?planovani-trasy&x=22.2552947&y=45.7653096&z=6&rc=9mMT8xTuNNuMTSawrsjA&rs=muni&rs=osmm&ri=5740&ri=57908&mrp={%22c%22%3A1%2C%22tt%22%3A1}&mrp={%22c%22%3A1%2C%22tt%22%3A1}&rt=&rt='
 route_str='CZ(Brno)\nSK(Bratislava)\nHU(Budapest)\nRO(Arad)\nRO(Bucarest)\nBG(Varna)'
 
 # Vignettes and road taxes
@@ -41,6 +44,10 @@ distance = 1413 # km
 
 # User interface
 # ------------------------------------------------------------------------
+# Show the route Brno - Varna
+driver = webdriver.Firefox()
+driver.get(route_url)
+
 os.system('clear') # Clear screen in Linux
 print("TRAVELLING FROM BRNO TO VARNA BY CAR\n")
 print("Route:\n%s" % route_str)
