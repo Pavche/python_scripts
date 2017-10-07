@@ -2,9 +2,7 @@
 # using "street view" mode
 # For some cities there are several starting points when looking at the map
 
-# Script for Windows
-
-# GUI automatization works under Windows, Linux
+# GUI automatization works under Windows, Linux, and macOS
 import pyautogui
 import time
 import platform # Info about computer platform uder which the script is run
@@ -22,9 +20,9 @@ import webbrowser
 
 
 # What OS are we running?
-os_platform=platform.system()
-os_replease=platform.release()
-os_ver=platform.version()
+os_platform = platform.system()
+os_replease = platform.release()
+os_ver = platform.version()
 
 # What is the default browser? Open with it Google maps.
 # Varinat 1 - from environment variables from the OS
@@ -54,8 +52,9 @@ BG_Varna_map={
 'South-east_entry_point':'https://www.google.com/maps/@43.185381,27.8749907,3a,75y,70.14h,70.85t/data=!3m6!1e1!3m4!1s65iz3MLdPVbRXlc4qxvmJA!2e0!7i13312!8i6656',
 '3rd_March_bul':'https://www.google.com/maps/@43.2427395,27.8490392,3a,75y,95.38h,83.01t/data=!3m6!1e1!3m4!1sZEeucMlEWsRcRzMMfJ76rw!2e0!7i13312!8i6656',
 'Slivnica_bul':'https://www.google.com/maps/@43.2291763,27.8687948,3a,75y,107.48h,84.37t/data=!3m6!1e1!3m4!1sxSvNfzMz_jWfU3d6Rphk9g!2e0!7i13312!8i6656',
-'Maritime_garden':'https://www.google.com/maps/@43.1979254,27.9201321,3a,75y,44.67h,81.77t/data=!3m6!1e1!3m4!1spZceN5KqXAyHoh-0O5W5Zg!2e0!7i13312!8i6656'
-} # 13 locations in Varna
+'Maritime_garden':'https://www.google.com/maps/@43.1979254,27.9201321,3a,75y,44.67h,81.77t/data=!3m6!1e1!3m4!1spZceN5KqXAyHoh-0O5W5Zg!2e0!7i13312!8i6656',
+'Varna.net':'https://www.google.cz/maps/place/Varna+Net/@43.2004684,27.9130576,3a,75y,78h,90t/data=!3m7!1e1!3m5!1sLaszH5bl39lgxqYQmJqc6Q!2e0!6s%2F%2Fgeo3.ggpht.com%2Fcbk%3Fpanoid%3DLaszH5bl39lgxqYQmJqc6Q%26output%3Dthumbnail%26cb_client%3Dsearch.TACTILE.gps%26thumb%3D2%26w%3D86%26h%3D86%26yaw%3D78.71454%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656!4m5!3m4!1s0x40a453f4104aa431:0x4fae7ee6806b0300!8m2!3d43.2004488!4d27.913232!6m1!1e1'
+} # 14 locations in Varna
 
 # Choose your destination on Google maps
 choice=0
@@ -64,7 +63,7 @@ while choice not in range(1,6):
       print('Q for quit')
       choice=raw_input('Your choice is: ')
       if choice=='q' or choice=='Q':
-         sys.exit(0) 
+         sys.exit(0)
       try:
          choice=int(choice) # Try to read as a number
       except:
@@ -94,7 +93,8 @@ elif choice==5:
 	10:'South-east_entry_point',
 	11:'3rd_March_bul',
 	12:'Slivnica_bul',
-	13:'Maritime_garden'
+	13:'Maritime_garden',
+	14:'Varna.net'
 	}
    pad = start_point[random.randint(1,13)]
    location_on_map=BG_Varna_map[pad]
@@ -129,11 +129,11 @@ while True:
         # autopy.mouse.smooth_move(int(0.5*Xmax),int(0.65*Ymax))
  	# autopy.mouse.click()
         # Variant 2 - using automatization with PyAutoGUI
-	pyautogui.moveTo(0.5*Xmax, 0.65*Ymax,duration=1)
+	pyautogui.moveTo(0.5*Xmax, 0.50*Ymax,duration=1)
 	pyautogui.click()
 	time.sleep(1.5)
- 	
+
+
 # Written by Pavlin Georgiev
 # November 2015
-# Last update: 18 Jan 2016
-
+# Last update: 1 Jan 2017
