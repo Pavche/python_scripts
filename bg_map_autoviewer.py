@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # This script shows largest cities in Bulgaria on Google maps
 # using "street view" mode
 # For some cities there are several starting points when looking at the map
@@ -6,7 +7,7 @@
 
 # GUI automatization works under Windows, Linux
 import pyautogui
-import time
+from time import sleep
 import platform # Info about computer platform uder which the script is run
 import os
 import subprocess
@@ -108,7 +109,7 @@ else:
 webbrowser.open_new(location_on_map)
 
 # Wait for 10 sec till the web page is fully loaded
-time.sleep(10)
+sleep(15)
 
 # How to start browser in maximized window?
 # For browsers linke Firefox, Chrome, Midori under Linux press F11
@@ -131,9 +132,9 @@ while True:
         # Variant 2 - using automatization with PyAutoGUI
 	pyautogui.moveTo(0.5*Xmax, 0.65*Ymax,duration=1)
 	pyautogui.click()
-	time.sleep(1.5)
+	sleep(1.5)
  	
 # Written by Pavlin Georgiev
 # November 2015
-# Last update: 18 Jan 2016
+# Last update: 16 Dec 2016
 
