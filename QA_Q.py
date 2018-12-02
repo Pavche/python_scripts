@@ -927,50 +927,40 @@ logging applications, dynamic page generators, asp, etc.). Additionally, there a
 servers and browsers, various versions of each, small but sometimes significant differences between
 them, variations in connection speeds, rapidly changing technologies, and multiple standards and
 protocols. The end result is that testing for web sites can become a major ongoing effort. Other
-considerations might include: - What are the expected loads on the server (e.g., number of hits per
+considerations might include:
+  - What are the expected loads on the server (e.g., number of hits per
 unit time?), and what kind of performance is required under such loads (such as web server response
 time, database query response times). What kinds of tools will be needed for performance testing
 (such as web testing tools, other tools already in house that can be adapted, web robot downloading
 tools, etc.)?
-- Who is the target audience? What kind of browsers will they be using? What kind of
+  - Who is the target audience? What kind of browsers will they be using? What kind of
 connection speed will they by using? Are they intra- organization (thus with likely high connection
 speeds and similar browsers) or Internet-wide (thus with a wide variety of connection speeds and
 browser types)?
-- What kind of performance is expected on the client side (e.g., how fast should
+  - What kind of performance is expected on the client side (e.g., how fast should
 pages appear, how fast should animations, applets, etc. load and run)?
-- Will down time for server
+  - Will down time for server
 and content maintenance/upgrades be allowed? How much?
-- What kinds of security (firewalls,
+  - What kinds of security (firewalls,
 encryptions, passwords, etc.) will be required and what is it expected to do? How can it be tested? -
 How reliable are the site's Internet connections required to be? And how does that affect backup
 system or redundant connection requirements and testing?
-- What processes will be required to
+  - What processes will be required to
 manage updates to the web site's content, and what are the requirements for maintaining, tracking,
 and controlling page content, graphics, links, etc.?
-- Which HTML specification will be adhered to?
-How strictly? What variations will be allowed for targeted browsers?
-- Will there be any standards or
-requirements for page appearance and/or graphics throughout a site or parts of a site??
-- How will
-internal and external links be validated and updated? how often?
-- Can testing be done on the
-production system, or will a separate test system be required? How are browser caching, variations in
+  - Which HTML specification will be adhered to? How strictly? What variations will be allowed for targeted browsers?
+  - Will there be any standards or requirements for page appearance and/or graphics throughout a site or parts of a site??
+  - How will internal and external links be validated and updated? how often?
+  - Can testing be done on the production system, or will a separate test system be required? How are browser caching, variations in
 browser option settings, dial-up connection variability, and real-world internet 'traffic congestion'
 problems to be accounted for in testing?- How extensive or customized are the server logging and
 reporting requirements; are they considered an integral part of the system and do they require
 testing?
-- How are cgi programs, applets, java scripts, ActiveX components, etc. to be maintained,
-tracked, controlled, and tested?
-- Pages should be 3-5 screens max unless content is tightly focused
-on a single topic. If larger, provide internal links within the page. - The page layouts and design
-elements should be consistent throughout a site, so that it's clear to the user that they're still within a
-site.
-- Pages should be as browser-independent as possible, or pages should be provided or
-generated based on the browser-type.
-- All pages should have links external to the page; there should
-be no dead-end pages.
-- The page owner, revision date, and a link to a contact person or
-organization should be included on each page."""},
+  - How are cgi programs, applets, java scripts, ActiveX components, etc. to be maintained, tracked, controlled, and tested?
+  - Pages should be 3-5 screens max unless content is tightly focused on a single topic. If larger, provide internal links within the page. - The page layouts and design elements should be consistent throughout a site, so that it's clear to the user that they're still within a site.
+  - Pages should be as browser-independent as possible, or pages should be provided or generated based on the browser-type.
+  - All pages should have links external to the page; there should be no dead-end pages.
+  - The page owner, revision date, and a link to a contact person or organization should be included on each page."""},
 
 160: {'How is testing affected by object-oriented designs?': """
 Well-engineered object-oriented design can make it easier to trace from code to internal design to
@@ -1003,14 +993,35 @@ tools is that if there are continual changes to the system being tested, the 're
 changed so much that it becomes very time-consuming to continuously update the scripts.
 Additionally, interpretation of results (screens, data, logs, etc.) can be a difficult task. Note that there
 are record/playback tools for text-based interfaces also, and for all types of platforms.- Other
-automated tools can include: code analyzers - monitor code complexity, adherence to standards, etc.
-coverage analyzers - these tools check which parts of the code have been exercised by a test, and
+automated tools can include:
+  1) code analyzers - monitor code complexity, adherence to standards, etc.
+  2) coverage analyzers - these tools check which parts of the code have been exercised by a test, and
 may be oriented to code statement coverage, condition coverage, path coverage, etc. memory
 analyzers - such as bounds-checkers and leak detectors. load/performance test tools - for testing
 client/server and web applications under various load levels. web test tools - to check that links are
 valid, HTML code usage is correct, client-side and server-side programs work, a web site's
 interactions are secure. other tools - for test case management, documentation management, bug
 reporting, and configuration management."""},
+
+
+163: {'What\'s the difference between black box and white box testing?': """
+Black-box and white-box are test design methods. Black-box test design treats the system as a
+“black-box”, so it doesn't explicitly use knowledge of the internal structure. Black-box test design is
+usually described as focusing on testing functional requirements. Synonyms for black-box include:
+behavioural, functional, opaque-box, and closed-box. White-box test design allows one to peek inside
+the “box”, and it focuses specifically on using internal knowledge of the software to guide the selection
+of test data. Synonyms for white-box include: structural, glass-box and clear-box. While black-box and
+white-box are terms that are still in popular use, many people prefer the terms 'behavioural' and
+'structural'. Behavioural test design is slightly different from black-box test design because the use of
+internal knowledge isn\'t strictly forbidden, but it's still discouraged. In practice, it hasn't proven useful
+to use a single test design method. One has to use a mixture of different methods so that they aren't
+hindered by the limitations of a particular one. Some call this 'gray-box' or 'translucent-box' test
+design, but others wish we'd stop talking about boxes altogether. It is important to understand that
+these methods are used during the test design phase, and their influence is hard to see in the tests
+once they're implemented. Note that any level of testing (unit testing, system testing, etc.) can use
+any test design methods. Unit testing is usually associated with structural test design, but this is
+because testers usually don't have well-defined requirements at the unit level to validate."""},
+
 
 }
 
