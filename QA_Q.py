@@ -19,9 +19,7 @@ functional specification document is a defect. In different organizations it's c
 If software misses some feature or function from what is there in requirement it is called as defect."""},
 
 3: {'What is CMM?':"""
-The Capability Maturity Model for Software (CMM or SW-CMM) is a model for judging the maturity of
-the software processes of an organization and for identifying the key practices that are required to
-increase the maturity of these processes."""},
+The Capability Maturity Model for Software (CMM or SW-CMM) is a model for judging the maturity of the software processes of an organization and for identifying the key practices that are required to increase the maturity of these processes."""},
 
 4: {'What is Beta Testing?': """
 Beta testing is testing of a release of a software product conducted by customers."""},
@@ -37,8 +35,7 @@ facilitate the testing of higher level components. The process is repeated until
 top of the hierarchy is tested."""},
 
 7: {'What is Boundary Testing?': """
-Test which focus on the boundary or limit conditions of the software being tested. (Some of these
-tests are stress tests)."""},
+Test which focus on the boundary or limit conditions of the software being tested. (Some of these tests are stress tests)."""},
 
 8: {'What is Boundary Value Analysis?': """
 BVA is similar to Equivalence Partitioning but focuses on "corner cases" or values that are usually out
@@ -52,36 +49,28 @@ Testing of all branches in the program source code is called Branch Testing."""}
 The generation of source code is called Coding."""},
 
 11: {'What is Compatibility Testing?': """
-Testing whether software is compatible with other elements of a system with which it should operate,
-e.g. browsers, Operating Systems, or hardware."""},
+Testing whether software is compatible with other elements of a system with which it should operate, e.g. browsers, Operating Systems, or hardware."""},
 
 12: {'What is a Component?': """
-A component is an identifiable part of a larger program or construction. Usually, a component
-provides a particular function or group of related functions."""},
+A component is an identifiable part of a larger program or construction. Usually, a component provides a particular function or group of related functions."""},
 
 13: {'What is Component Testing?': """
-Testing of individual software components is called Component testing.
-Take your testing career to the next level, get ISTQB certified – http://istqbexamcertification.com
-202 Software Testing Interview Questions and Answers"""},
+Testing of individual software components is called Component testing."""},
 
 14: {'What is Acceptance Testing?': """
-Testing conducted to enable a user/customer to determine whether to accept a software product.
-Normally performed to validate the software meets a set of agreed acceptance criteria."""},
+Testing conducted to enable a user/customer to determine whether to accept a software product. Normally performed to validate the software meets a set of agreed acceptance criteria."""},
 
 15: {'What is Accessibility Testing?': """
 Verifying a product is accessible to the people having disabilities (deaf, blind, mentally disabled etc.)."""},
 
 16: {'What is Ad Hoc Testing?': """
-A testing phase where the tester tries to 'break' the system by randomly trying the system's
-functionality is called Ad Hoc testing. This can include negative testing also."""},
+A testing phase where the tester tries to 'break' the system by randomly trying the system's functionality is called Ad Hoc testing. This can include negative testing also."""},
 
 17: {'What is Agile Testing?': """
-Testing practice for projects using agile methodologies, treating development as the customer of
-testing and emphasizing a test-first design paradigm. See also Test Driven Development."""},
+Testing practice for projects using agile methodologies, treating development as the customer of testing and emphasizing a test-first design paradigm. See also Test Driven Development."""},
 
 18: {'What is Application Binary Interface (ABI)?': """
-A specification defining requirements for portability of applications in binary forms across different
-system platforms and environments is called Application Binary Interface (ABI)."""},
+A specification defining requirements for portability of applications in binary forms across different system platforms and environments is called Application Binary Interface (ABI)."""},
 
 19: {'What is Application Programming Interface (API)?': """
 A formalized set of software calls and routines that can be referenced by an application program in
@@ -89,8 +78,7 @@ order to access supporting system or network services is called Application Prog
 (API)."""},
 
 20: {'What is Automated Software Quality (ASQ)?': """
-The use of software tools, such as automated testing tools, to improve software quality is called
-Automated Software Quality (ASQ)."""},
+The use of software tools, such as automated testing tools, to improve software quality is called Automated Software Quality (ASQ)."""},
 
 21: {'What is Automated Testing?': """
 Testing employing software tools which execute tests without manual intervention is called Automated
@@ -102,8 +90,7 @@ preconditions, and other test control and test reporting functions."""},
 It is a meta-language used to formally describe the syntax of a language."""},
 
 23: {'What is Basic Block?': """
-A sequence of one or more consecutive, executable statements containing no branches is called
-Basic Block."""},
+A sequence of one or more consecutive, executable statements containing no branches is called Basic Block."""},
 
 24: {'What is Basis Path Testing?': """
 A white box test case design technique that uses the algorithmic flow of the program to design tests."""},
@@ -112,45 +99,35 @@ A white box test case design technique that uses the algorithmic flow of the pro
 The set of tests derived using basis path testing."""},
 
 26: {'What is Baseline?': """
-The point at which some deliverable produced during the software engineering process is put under
-formal change control.
-Take your testing career to the next level, get ISTQB certified – http://istqbexamcertification.com
-202 Software Testing Interview Questions and Answers"""},
+The point at which some deliverable produced during the software engineering process is put under formal change control."""},
 
 27: {'What you will do during the first day of job?': """
 Few things that you should be doing on the first day of your job are
-1. Reach office at least 15 minutes early
-2. Be calm and relaxed
-3. Have a smile on your face
-4. Don’t be shy
-5. Don’t try too hard to impress your colleagues
-6. If you're offered to go have lunch with your new boss and co-workers then you should go. It's
-important to show that you're ready to mingle with your new team.
-7. Pay attention to how decisions are made."""},
+  1. Reach office at least 15 minutes early
+  2. Be calm and relaxed
+  3. Have a smile on your face
+  4. Don’t be shy
+  5. Don’t try too hard to impress your colleagues
+  6. If you're offered to go have lunch with your new boss and co-workers then you should go. It's important to show that you're ready to mingle with your new team.
+  7. Pay attention to how decisions are made."""},
 
 28: {'What is Binary Portability Testing?': """
-Testing an executable application for portability across system platforms and environments, usually
-for conformation to an ABI specification is called Binary Portability Testing."""},
+Testing an executable application for portability across system platforms and environments, usually for conformation to an ABI specification is called Binary Portability Testing."""},
 
 29: {'What is Breadth Testing?': """
-A test suite that exercises the full functionality of a product but does not test features in detail is called
-Breadth Testing."""},
+A test suite that exercises the full functionality of a product but does not test features in detail is called Breadth Testing."""},
 
 30: {'What is CAST?': """
-Computer Aided Software Testing refers to the computing-based processes, techniques and tools for
-testing software applications or programs."""},
+Computer Aided Software Testing refers to the computing-based processes, techniques and tools for testing software applications or programs."""},
 
 31: {'What is Capture/Replay Tool?': """
-A test tool that records test input as it is sent to the software under test. The input cases stored can
-then be used to reproduce the test at a later time. Most commonly applied to GUI test tools."""},
+A test tool that records test input as it is sent to the software under test. The input cases stored can then be used to reproduce the test at a later time. Most commonly applied to GUI test tools."""},
 
 32: {'What is Cause Effect Graph?': """
-A graphical representation of inputs and the associated outputs effects which can be used to design
-test cases."""},
+A graphical representation of inputs and the associated outputs effects which can be used to design test cases."""},
 
 33: {'What is Code Complete?': """
-Phase of development where functionality is implemented entirety; bug fixes are all that are left. All
-functions found in the Functional Specifications have been implemented."""},
+Phase of development where functionality is implemented entirety; bug fixes are all that are left. All functions found in the Functional Specifications have been implemented."""},
 
 34: {'What is Code Coverage?': """
 An analysis method that determines which parts of the software have been executed (covered) by the
@@ -174,8 +151,7 @@ module or database records. Identifies and measures the level of locking, deadlo
 single-threaded code and locking semaphores."""},
 
 38: {'What is Conformance Testing?': """
-Conformance testing, also known as compliance testing, is a methodology used in engineering to
-ensure that a product, process, computer program or system meets a defined set of standards."""},
+Conformance testing, also known as compliance testing, is a methodology used in engineering to ensure that a product, process, computer program or system meets a defined set of standards."""},
 
 39: {'What is Context Driven Testing?': """
 The context-driven school of software testing is flavour of Agile Testing that advocates continuous
@@ -183,30 +159,25 @@ and creative evaluation of testing opportunities in light of the potential infor
 value of that information to the organization right now."""},
 
 40: {'What is Conversion Testing?': """
-Testing of programs or procedures used to convert data from existing systems for use in replacement
-systems."""},
+Testing of programs or procedures used to convert data from existing systems for use in replacement systems."""},
 
 41: {'What is Cyclomatic Complexity?': """
-A measure of the logical complexity of an algorithm, used in white-box testing is called Cyclomatic
-Complexity."""},
+A measure of the logical complexity of an algorithm, used in white-box testing is called Cyclomatic Complexity."""},
 
 42: {'What is Data Dictionary?': """
 A database that contains definitions of all data items defined during analysis."""},
 
 43: {'What is Data Flow Diagram?': """
-A data flow diagram (DFD) is a graphical representation of the "flow" of data through an information
-system, modelling its process aspects."""},
+A data flow diagram (DFD) is a graphical representation of the "flow" of data through an information system, modelling its process aspects."""},
 
 44: {'What is Data Driven Testing?': """
-Testing in which the action of a test case is parameterized by externally defined data values,
-maintained as a file or spreadsheet. This is a common technique used in Automated Testing."""},
+Testing in which the action of a test case is parameterized by externally defined data values, maintained as a file or spreadsheet. This is a common technique used in Automated Testing."""},
 
 45: {'What is Debugging?': """
 The process of finding and removing the causes of software failures is called Debugging."""},
 
 46: {'What is Defect?': """
-When actual result deviates from the expected result while testing a software application or product
-then it results into a defect."""},
+When actual result deviates from the expected result while testing a software application or product then it results into a defect."""},
 
 47: {'What is Dependency Testing?': """
 Dependency Testing, a testing technique in which an application's requirements are pre-examined
@@ -220,8 +191,7 @@ A test that exercises a feature of a product in full detail is called Depth test
 Testing software through executing it is called Dynamic testing. Also know about Static Testing."""},
 
 50: {'What is Emulator?': """
-A device, computer program, or system that accepts the same inputs and produces the same outputs
-in a given system is called Emulator."""},
+A device, computer program, or system that accepts the same inputs and produces the same outputs in a given system is called Emulator."""},
 
 51: {'What is Endurance Testing?': """
 Checks for memory leaks or other problems that may occur with prolonged execution."""},
@@ -232,24 +202,19 @@ interacting with a database, using network communications, or interacting with o
 applications, or systems if appropriate is called End-to-End testing."""},
 
 53: {'What is Equivalence Class?': """
-A portion of a component's input or output domains for which the component's behaviour is assumed
-to be the same from the component's specification."""},
+A portion of a component's input or output domains for which the component's behaviour is assumed to be the same from the component's specification."""},
 
 54: {'What is Equivalence Partitioning?': """
-A test case design technique for a component in which test cases are designed to execute
-representatives from equivalence classes."""},
+A test case design technique for a component in which test cases are designed to execute representatives from equivalence classes."""},
 
 55: {'What is Exhaustive Testing?': """
-Testing which covers all combinations of input values and preconditions for an element of the
-software under test."""},
+Testing which covers all combinations of input values and preconditions for an element of the software under test."""},
 
 56: {'What is Functional Decomposition?': """
-A technique used during planning, analysis and design; creates a functional hierarchy for the
-software."""},
+A technique used during planning, analysis and design; creates a functional hierarchy for the software."""},
 
 57: {'What is Functional Specification?': """
-A document that describes in detail the characteristics of the product with regard to its intended
-features is called Functional Specification."""},
+A document that describes in detail the characteristics of the product with regard to its intended features is called Functional Specification."""},
 
 58: {'What is Functional Testing?': """
 Testing the features and operational behaviour of a product to ensure they correspond to its
@@ -261,19 +226,16 @@ Testing."""},
 White Box Testing is also known as Glass Box testing."""},
 
 60: {'What is Gorilla Testing?': """
-Gorilla Testing is a testing technique in which sometimes developers also join hands with testers to
-test a particular module thoroughly in all aspects."""},
+Gorilla Testing is a testing technique in which sometimes developers also join hands with testers to test a particular module thoroughly in all aspects."""},
 
 61: {'What is Gray Box Testing?': """
-A combination of Black Box and White Box testing methodologies is called Gray box testing. Testing a
-piece of software against its specification but using some knowledge of its internal workings."""},
+A combination of Black Box and White Box testing methodologies is called Gray box testing. Testing a piece of software against its specification but using some knowledge of its internal workings."""},
 
 62: {'What is High Order Tests?': """
 Black-box tests conducted once the software has been integrated."""},
 
 63: {'What is Independent Test Group (ITG)?': """
-A group of people whose primary responsibility is software testing. Know more about Independent
-testing"""},
+A group of people whose primary responsibility is software testing. Know more about Independent testing"""},
 
 64: {'What is Inspection?': """
 A group review quality improvement process for written material. It consists of two aspects; product
@@ -307,28 +269,22 @@ content of a program. A metric should be a real objective measurement of somethi
 of bugs per lines of code."""},
 
 71: {'What is Monkey Testing?': """
-Testing a system or an Application on the fly, i.e just few tests here and there to ensure the system or
-an application does not crash out."""},
+Testing a system or an Application on the fly, i.e just few tests here and there to ensure the system or an application does not crash out."""},
 
 72: {'What is Negative Testing?': """
-Testing aimed at showing software does not work. This is also known as "test to fail". See also
-Positive Testing."""},
+Testing aimed at showing software does not work. This is also known as "test to fail". See also Positive Testing."""},
 
 73: {'What is Path Testing?': """
 Testing in which all paths are in the program source code are tested at least once."""},
 
 74: {'What is Performance Testing?': """
-Testing conducted to evaluate the compliance of a system or component with specified performance
-requirements. Often this is performed using an automated test tool to simulate large number of users."""},
+Testing conducted to evaluate the compliance of a system or component with specified performance requirements. Often this is performed using an automated test tool to simulate large number of users."""},
 
 75: {'What is Positive Testing?': """
-Testing aimed at showing software works. This is also known as "test to pass".
-Take your testing career to the next level, get ISTQB certified – http://istqbexamcertification.com
-202 Software Testing Interview Questions and Answers"""},
+Testing aimed at showing software works. This is also known as "test to pass"."""},
 
 76: {'What is Quality Assurance?': """
-All those planned or systematic actions necessary to provide adequate confidence that a product or
-service is of the type and quality needed and expected by the customer."""},
+All those planned or systematic actions necessary to provide adequate confidence that a product or service is of the type and quality needed and expected by the customer."""},
 
 77: {'What is Quality Audit?': """
 A systematic and independent examination to determine whether quality activities and related results
@@ -336,9 +292,7 @@ comply with planned arrangements and whether these arrangements are implemented 
 are suitable to achieve objectives."""},
 
 78: {'What is Quality Circle?': """
-A group of individuals with related interests that meet at regular intervals to consider problems or
-other matters related to the quality of outputs of a process and to the correction of problems or to the
-improvement of quality."""},
+A group of individuals with related interests that meet at regular intervals to consider problems or other matters related to the quality of outputs of a process and to the correction of problems or to the improvement of quality."""},
 
 79: {'What is Quality Control?': """
 The operational techniques and the activities used to fulfil and verify requirements of quality."""},
@@ -347,59 +301,43 @@ The operational techniques and the activities used to fulfil and verify requirem
 That aspect of the overall management function that determines and implements the quality policy."""},
 
 81: {'What is Quality Policy?': """
-In quality management system, a quality policy is a document jointly developed by management and
-quality experts to express the quality objectives of the organization, the acceptable level of quality and
-the duties of specific departments to ensure quality."""},
+In quality management system, a quality policy is a document jointly developed by management and quality experts to express the quality objectives of the organization, the acceptable level of quality and the duties of specific departments to ensure quality."""},
 
 82: {'What is Quality System?': """
-The organizational structure, responsibilities, procedures, processes, and resources for implementing
-quality management is called Quality System."""},
+The organizational structure, responsibilities, procedures, processes, and resources for implementing quality management is called Quality System."""},
 
 83: {'What is Race Condition?': """
-A race condition is an undesirable situation that occurs when a device or system attempts to perform
-two or more operations at the same time, but because of the nature of the device or system, the
-operations must be done in the proper sequence to be done correctly."""},
+A race condition is an undesirable situation that occurs when a device or system attempts to perform two or more operations at the same time, but because of the nature of the device or system, the operations must be done in the proper sequence to be done correctly."""},
 
 84: {'What is Ramp Testing?': """
 Continuously raising an input signal until the system breaks down."""},
 
 85: {'What is Recovery Testing?': """
-Recovery testing confirms that the program recovers from expected or unexpected events without
-loss of data or functionality. Events can include shortage of disk space, unexpected loss of
-communication, or power out conditions."""},
+Recovery testing confirms that the program recovers from expected or unexpected events without loss of data or functionality. Events can include shortage of disk space, unexpected loss of communication, or power out conditions."""},
 
 86: {'What is Regression Testing?': """
-Retesting a previously tested program following modification to ensure that faults have not been
-introduced or uncovered as a result of the changes made is called Regression testing."""},
+Retesting a previously tested program following modification to ensure that faults have not been introduced or uncovered as a result of the changes made is called Regression testing."""},
 
 87: {'What is Release Candidate?': """
-A pre-release version, which contains the desired functionality of the final version, but which needs to
-be tested for bugs (which ideally should be removed before the final version is released)."""},
+A pre-release version, which contains the desired functionality of the final version, but which needs to be tested for bugs (which ideally should be removed before the final version is released)."""},
 
 88: {'What is Sanity Testing?': """
-Brief test of major functional elements of a piece of software to determine if its basically operational.
-See also Smoke Testing."""},
+Brief test of major functional elements of a piece of software to determine if its basically operational. See also Smoke Testing."""},
 
 89: {'What is Scalability Testing?': """
-Performance testing focused on ensuring the application under test gracefully handles increases in
-work load."""},
+Performance testing focused on ensuring the application under test gracefully handles increases in work load."""},
 
 90: {'What is Security Testing?': """
-Testing which confirms that the program can restrict access to authorized personnel and that the
-authorized personnel can access the functions available to their security level."""},
+Testing which confirms that the program can restrict access to authorized personnel and that the authorized personnel can access the functions available to their security level."""},
 
 91: {'What is Smoke Testing?': """
 In Software testing context, smoke testing refers to testing the basic functionality of the build."""},
 
 92: {'What is Soak Testing?': """
-Running a system at high load for a prolonged period of time is called Soak testing. For example; run
-several times more transactions in an entire day (or night) than would be expected in a busy day, to
-identify the performance problems that appear after a large number of transactions have been
-executed."""},
+Running a system at high load for a prolonged period of time is called Soak testing. For example; run several times more transactions in an entire day (or night) than would be expected in a busy day, to identify the performance problems that appear after a large number of transactions have been executed."""},
 
 93: {'What is Software Requirements Specification?': """
-A deliverable that describes all data, functional and behavioural requirements, all constraints, and all
-validation requirements for software/"""},
+A deliverable that describes all data, functional and behavioural requirements, all constraints, and all validation requirements for software/"""},
 
 94: {'What is Software Testing?': """
 A set of activities conducted with the intent of finding errors in software."""},
@@ -414,100 +352,74 @@ A tool that carries out static analysis is called Static Analyzer."""},
 Analysis of a program carried out without executing the program."""},
 
 98: {'What is Storage Testing?': """
-Testing that verifies the program under test stores data files in the correct directories and that it
-reserves sufficient space to prevent unexpected termination resulting from lack of space. This is
-external storage as opposed to internal storage."""},
+Testing that verifies the program under test stores data files in the correct directories and that it reserves sufficient space to prevent unexpected termination resulting from lack of space. This is external storage as opposed to internal storage."""},
 
 99: {'What is Stress Testing?': """
-Testing conducted to evaluate a system or component at or beyond the limits of its specified
-requirements to determine the load under which it fails and how. Often this is performance testing
-using a very high level of simulated load."""},
+Testing conducted to evaluate a system or component at or beyond the limits of its specified requirements to determine the load under which it fails and how. Often this is performance testing using a very high level of simulated load."""},
 
 100: {'What is Structural Testing?': """
-Testing based on an analysis of internal workings and structure of a piece of software. See also White
-Box Testing."""},
+Testing based on an analysis of internal workings and structure of a piece of software. See also White Box Testing."""},
 
 101: {'What is System Testing?': """
-Testing that attempts to discover defects that are properties of the entire system rather than of its
-individual components is called System testing."""},
+Testing that attempts to discover defects that are properties of the entire system rather than of its individual components is called System testing."""},
 
 102: {'What is Testability?': """
-The degree to which a system or component facilitates the establishment of test criteria and the
-performance of tests to determine whether those criteria have been met."""},
+The degree to which a system or component facilitates the establishment of test criteria and the performance of tests to determine whether those criteria have been met."""},
 
 103: {'What is Testing?': """
-The process of exercising software to verify that it satisfies specified requirements and to detect
-errors is called testing. The process of analyzing a software item to detect the differences between
-existing and required conditions (that is, bugs), and to evaluate the features of the software item (Ref.
-IEEE Std 829). The process of operating a system or component under specified conditions,
-observing or recording the results, and making an evaluation of some aspect of the system or
-component."""},
+The process of exercising software to verify that it satisfies specified requirements and to detect errors is called testing. The process of analyzing a software item to detect the differences between existing and required conditions (that is, bugs), and to evaluate the features of the software item (Ref. IEEE Std 829). The process of operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of the system or component."""},
 
 104: {'What is the difference between quality assurance and testing?': """
-Quality assurance involves the entire software development process and testing involves operation of
-a system or application to evaluate the results under certain conditions. QA is oriented to prevention
-and Testing is oriented to detection."""},
+Quality assurance involves the entire software development process and testing involves operation of a system or application to evaluate the results under certain conditions. QA is oriented to prevention and Testing is oriented to detection."""},
 
 105: {'Why does software have bugs?': """
-Software have bugs because of the following reasons: 1) Miscommunication 2) programming errors 3)
-time pressures. 4) Changing requirements 5) software complexity
-106. How do you do usability testing, security testing, installation testing, ADHOC, safety and smoke
-testing?
-Usability testing : testing the user friendliness , simplicity of software. Security testing is testing the
-access rights for example admin has all rights, user1 has only right to read and open not to write .
-Installation testing is testing the software while installing it in different environment. Safety and
-security goes hand in hand most of the time it used logins. Smoke testing is to test the software
-whether the basic functionality is working or not. If u wants to Test the basic functionalities then we go
-for ADHOC it happens if we don’t have time to test procedure wise"""},
+Software have bugs because of the following reasons:
+  1) Miscommunication 
+  2) programming errors
+  3) time pressures. 
+  4) Changing requirements 
+  5) software complexity"""},
+
+106: {'How do you do usability testing, security testing, installation testing, ADHOC, safety and smoketesting?':"""
+  1) Usability testing : testing the user friendliness , simplicity of software.
+  
+  2) Security testing is testing the access rights for example admin has all rights, user1 has only right to read and open not to write .
+  
+  3) Installation testing is testing the software while installing it in different environment.
+  
+  4) Safety and security goes hand in hand most of the time it used logins.
+  
+  5) Smoke testing is to test the software whether the basic functionality is working or not. If you wants to rest the basic functionalities then we go for ADHOC it happens if we don’t have time to test procedure wise"""},
 
 107: {'What are memory leaks and buffer overflows?': """
-Memory leaks means incomplete de-allocation - are bugs that happen very often. Buffer overflow
-means data sent as input to the server that overflows the boundaries of the input area, thus causing
-the server to misbehave."""},
+Memory leaks means incomplete de-allocation - are bugs that happen very often. Buffer overflow means data sent as input to the server that overflows the boundaries of the input area, thus causing the server to misbehave."""},
 
 108: {'What are the major differences between stress testing, load testing, Volume testing?': """
-Stress testing means increasing the load and checking the performance at each level. Load testing
-means at a time giving more load by the expectation and checking the performance at that level.
-Volume testing means first we have to apply initial."""},
+Stress testing means increasing the load and checking the performance at each level. Load testing means at a time giving more load by the expectation and checking the performance at that level. Volume testing means first we have to apply initial."""},
 
 109: {'What is Exhaustive Testing?': """
-Testing which covers all combinations of input values and preconditions for an element of the
-software under test."""},
+Testing which covers all combinations of input values and preconditions for an element of the software under test."""},
 
 110: {'What is Functional Decomposition?': """
-A technique used during planning, analysis and design; creates a functional hierarchy for the
-software."""},
+A technique used during planning, analysis and design; creates a functional hierarchy for the software."""},
 
 111: {'What is Functional Specification?': """
-A document that describes in detail the characteristics of the product with regard to its intended
-features is called Functional Specification."""},
+A document that describes in detail the characteristics of the product with regard to its intended features is called Functional Specification."""},
 
 112: {'What is Test Bed?': """
-An execution environment configured for testing. It may consist of specific hardware, OS, network
-topology, configuration of the product under test, other application or system software, etc. The Test
-Plan for a project should enumerate the test beds(s) to be used."""},
+An execution environment configured for testing. It may consist of specific hardware, OS, network topology, configuration of the product under test, other application or system software, etc. The Test Plan for a project should enumerate the test beds(s) to be used."""},
 
 113: {'What is Test Case?': """
-Test Case is a commonly used term for a specific test. This is usually the smallest unit of testing. A
-Test Case will consist of information such as requirements testing, test steps, verification steps,
-prerequisites, outputs, test environment, etc. A set of inputs, execution preconditions, and expected
-outcomes developed for a particular objective, such as to exercise a particular program path or to
-verify compliance with a specific requirement. Test Driven Development? Testing methodology
-associated with Agile Programming in which every chunk of code is covered by unit tests, which must
-all pass all the time, in an effort to eliminate unit-level and regression bugs during development.
-Practitioners of TDD write a lot of tests, i.e. an equal number of lines of test code to the size of the
-production code."""},
+Test Case is a commonly used term for a specific test. This is usually the smallest unit of testing. A Test Case will consist of information such as requirements testing, test steps, verification steps, prerequisites, outputs, test environment, etc. A set of inputs, execution preconditions, and expected outcomes developed for a particular objective, such as to exercise a particular program path or to verify compliance with a specific requirement. Test Driven Development? Testing methodology associated with Agile Programming in which every chunk of code is covered by unit tests, which must all pass all the time, in an effort to eliminate unit-level and regression bugs during development. Practitioners of TDD write a lot of tests, i.e. an equal number of lines of test code to the size of the production code."""},
 
 114: {'What is Test Driver?': """
 A program or test tool used to execute a test. Also known as a Test Harness."""},
 
 115: {'What is Test Environment?': """
-The hardware and software environment in which tests will be run, and any other software with which
-the software under test interacts when under test including stubs and test drivers."""},
+The hardware and software environment in which tests will be run, and any other software with which the software under test interacts when under test including stubs and test drivers."""},
 
 116: {'What is Test First Design?': """
-Test-first design is one of the mandatory practices of Extreme Programming (XP).It requires that
-programmers do not write any production code until they have first written a unit test."""},
+Test-first design is one of the mandatory practices of Extreme Programming (XP).It requires that programmers do not write any production code until they have first written a unit test."""},
 
 117: {'What is Test Harness?': """
 A program or test tool used to execute tests. Also known as a Test Driver."""},
@@ -518,16 +430,13 @@ identifies test items, the features to be tested, the testing tasks, who will do
 requiring contingency planning."""},
 
 119: {'What is Test Procedure?': """
-A document providing detailed instructions for the execution of one or more test cases is called test
-Procedure."""},
+A document providing detailed instructions for the execution of one or more test cases is called test Procedure."""},
 
 120: {'What is Test Script?': """
-Test script is commonly used to refer to the instructions for a particular test that will be carried out by
-an automated test tool."""},
+Test script is commonly used to refer to the instructions for a particular test that will be carried out by an automated test tool."""},
 
 121: {'What is Test Specification?': """
-Test specification is a document specifying the test approach for a software feature or combination or
-features and the inputs, predicted results and execution conditions for the associated tests."""},
+Test specification is a document specifying the test approach for a software feature or combination or features and the inputs, predicted results and execution conditions for the associated tests."""},
 
 122: {'What is Test Suite?': """
 A collection of tests used to validate the behaviour of a product. The scope of a Test Suite varies from
@@ -536,8 +445,7 @@ most cases however a Test Suite is a high level concept, grouping together hundr
 tests related by what they are intended to test."""},
 
 123: {'What is Test Tool?': """
-Computer programs used for the testing of a system, a component of the system, or its
-documentation is called a test tool."""},
+Computer programs used for the testing of a system, a component of the system, or its documentation is called a test tool."""},
 
 124: {'What is Thread Testing?': """
 A variation of top-down testing where the progressive integration of components follows the
@@ -551,26 +459,22 @@ components are then used to test lower level components. The process is repeated
 level components have been tested."""},
 
 126: {'What is Total Quality Management?': """
-Total Quality Management is a company commitment to develop a process that achieves high quality
-product and customer satisfaction."""},
+Total Quality Management is a company commitment to develop a process that achieves high quality product and customer satisfaction."""},
 
 127: {'What is Traceability Matrix?': """
-Traceability Matrix is a document showing the relationship between Test Requirements and Test
-Cases."""},
+Traceability Matrix is a document showing the relationship between Test Requirements and Test Cases."""},
 
 128: {'What is Usability Testing?': """
 Testing the ease with which users can learn and use a product."""},
 
 129: {'What is Use Case?': """
-Use case is the specification of tests that are conducted from the end-user perspective. Use cases
-tend to focus on operating software as an end-user would conduct their day-to-day activities."""},
+Use case is the specification of tests that are conducted from the end-user perspective. Use cases tend to focus on operating software as an end-user would conduct their day-to-day activities."""},
 
 130: {'What is Unit Testing?': """
 Testing of individual software components is called Unit testing."""},
 
 131: {'What is Validation?': """
-The process of evaluating software at the end of the software development process to ensure
-compliance with software requirements is called Validation."""},
+The process of evaluating software at the end of the software development process to ensure compliance with software requirements is called Validation."""},
 
 132: {'What is Verification?': """
 The process of determining whether or not the products of a given phase of the software development
@@ -628,7 +532,6 @@ most applications is generally accepted as 50%, when people do honest accounting
 software, this can go up to 80%."""},
 
 138: {'How can new Software QA processes be introduced in an existing organization?': """
-
 - A lot depends on the size of the organization and the risks involved. For large organizations with
 high-risk (in terms of lives or property) projects, serious management buy-in is required and a
 formalized QA process is necessary. 
@@ -648,33 +551,28 @@ specifications or expectations."""},
 
 139: {'What are 5 common problems in the software development process?': """
 The 5 common problems in the software development process are as follows:
-1) Poor requirements - if requirements are unclear, incomplete, too general, or not testable, there will
-be problems. 2) Unrealistic schedule - if too much work is crammed in too little time, problems are
-inevitable. 3) Inadequate testing - no one will know whether or not the program is any good until the
-customer complaints or systems crash. 4) Features - requests to pile on new features after
-development is underway; extremely common. 5) Miscommunication - if developers don't know what\'s
-needed or customer's have erroneous expectations, problems are guaranteed."""},
+  1) Poor requirements - if requirements are unclear, incomplete, too general, or not testable, there will be problems.
+  
+  2) Unrealistic schedule - if too much work is crammed in too little time, problems are inevitable.
+  
+  3) Inadequate testing - no one will know whether or not the program is any good until the customer complaints or systems crash. 
+ 
+  4) Features - requests to pile on new features after development is underway; extremely common.
+ 
+  5) Miscommunication - if developers don't know what\'s needed or customer's have erroneous expectations, problems are guaranteed."""},
 
 
 140: {'What are 5 common solutions to software development problems?': """
 The 5 common solutions to software development problems as given below:
-1) Solid requirements - clear, complete, detailed, cohesive, attainable, testable requirements that are
-agreed to by all players. Use prototypes to help nail down requirements.
-2) Realistic schedules - allow
-adequate time for planning, design, testing, bug fixing, re-testing, changes, and documentation;
-personnel should be able to complete the project without burning out.
-3) Adequate testing - start
-testing early on, re-test after fixes or changes, plan for adequate time for testing and bug-fixing.
-4) Stick to initial requirements as much as possible - be prepared to defend against changes and
-additions once development has begun, and be prepared to explain consequences. If changes are
-necessary, they should be adequately reflected in related schedule changes. If possible, use rapid
-prototyping during the design phase so that customers can see what to expect. This will provide them
-a higher comfort level with their requirements decisions and minimize changes later on.
-5) communication - require walkthroughs and inspections when appropriate; make extensive use of
-group communication tools - e-mail, groupware, networked bug-tracking tools and change
-management tools, intranet capabilities, etc.; insure that documentation is available and up-to-date -
-preferably electronic, not paper; promote teamwork and cooperation; use prototypes early on so that
-customers' expectations are clarified."""},
+  1) Solid requirements - clear, complete, detailed, cohesive, attainable, testable requirements that are agreed to by all players. Use prototypes to help nail down requirements.
+  
+  2) Realistic schedules - allow adequate time for planning, design, testing, bug fixing, re-testing, changes, and documentation; personnel should be able to complete the project without burning out.
+  
+  3) Adequate testing - start testing early on, re-test after fixes or changes, plan for adequate time for testing and bug-fixing.
+  
+  4) Stick to initial requirements as much as possible - be prepared to defend against changes and additions once development has begun, and be prepared to explain consequences. If changes are necessary, they should be adequately reflected in related schedule changes. If possible, use rapid prototyping during the design phase so that customers can see what to expect. This will provide them a higher comfort level with their requirements decisions and minimize changes later on.
+  
+  5) communication - require walkthroughs and inspections when appropriate; make extensive use of group communication tools - e-mail, groupware, networked bug-tracking tools and change management tools, intranet capabilities, etc.; insure that documentation is available and up-to-date - preferably electronic, not paper; promote teamwork and cooperation; use prototypes early on so that customers' expectations are clarified."""},
 
 141: {'What is a \'good code\'?': """
 'Good code' is a code that works, is bug free, and is readable and maintainable. Some organizations
@@ -1184,15 +1082,13 @@ compatible with your application which means tool should be able to interact wit
 Ease of use"""},
 
 178: {'How you will evaluate the tool for test automation?': """
-We need to concentrate on the features of the tools and how this could be beneficial for our project.
-The additional new features and the enhancements of the features will also help."""},
+We need to concentrate on the features of the tools and how this could be beneficial for our project. The additional new features and the enhancements of the features will also help."""},
 
 179: {'What are main benefits of test automation?': """
 FAST, RELIABLE, COMPREHENSIVE, REUSABLE"""},
 
 180: {'What could go wrong with test automation?': """
-  1) The choice of automation tool for certain technologies
-  2) Wrong set of test automated"""},
+  1) The choice of automation tool for certain technologies   2) Wrong set of test automated"""},
 
 181: {'How you will describe testing activities?': """
 Testing activities start from the elaboration phase. The various testing activities are preparing the test
@@ -1200,8 +1096,7 @@ plan, Preparing test cases, Execute the test case, Log the bug, validate the bug
 action for the bug, Automate the test cases."""},
 
 182: {'What testing activities you may want to automate?': """
-Automate all the high priority test cases which need to be executed as a part of regression testing for
-each build cycle."""},
+Automate all the high priority test cases which need to be executed as a part of regression testing for each build cycle."""},
 
 183: {'Describe common problems of test automation.': """
 The common problems are:
@@ -1249,8 +1144,7 @@ simply test your application in “normal” environment."""},
   3) The inability of the win runner to execute the script against multiple languages"""},
 
 191: {'What are the main attributes of test automation?': """
-Maintainability, Reliability, Flexibility, Efficiency, Portability, Robustness, and Usability - these are the
-main attributes in test automation."""},
+Maintainability, Reliability, Flexibility, Efficiency, Portability, Robustness, and Usability - these are the main attributes in test automation."""},
 
 192: {'What testing activities you may want to automate in a project?': """
 Testing tools can be used for : Sanity tests(which is repeated on every build), stress/Load tests(U
@@ -1263,12 +1157,10 @@ automated tool. Next subject the same tests to careful manual testing. If the re
 can say your testing tool has been performing."""},
 
 194: {'How will you test the field that generates auto numbers of AUT when we click the button "NEW" in the application?': """
-We can create a text file in a certain location, and update the auto generated value each time we run
-the test and compare the currently generated value with the previous one will be one solution."""},
+We can create a text file in a certain location, and update the auto generated value each time we run the test and compare the currently generated value with the previous one will be one solution."""},
 
 195: {'How will you evaluate the fields in the application under test using automation tool?': """
-We can use Verification points (rational Robot) to validate the fields .Ex Using object data, object data
-properties VP we can validate fields."""},
+We can use Verification points (rational Robot) to validate the fields .Ex Using object data, object data properties VP we can validate fields."""},
 
 196: {'Can we perform the test of single application at the same time using different tools on the same machine?': """
 No. The Testing Tools will be in the ambiguity to determine which browser is opened by which tool."""},
@@ -1292,12 +1184,10 @@ system/application/website built with various other objects such as other web br
 platforms, users"""},
 
 201: {'How testing is proceeded when SRS or any other document is not given?': """
-If SRS is not there we can perform Exploratory testing. In Exploratory testing the basic module is
-executed and depending on its results, the next plan is executed."""},
+If SRS is not there we can perform Exploratory testing. In Exploratory testing the basic module is executed and depending on its results, the next plan is executed."""},
 
 202: {'How do we test for severe memory leakages?': """
-Severe memory leakages can be tested by using Endurance Testing . Endurance Testing means
-checking for memory leaks or other problems that may occur with prolonged execution."""},
+Severe memory leakages can be tested by using Endurance Testing . Endurance Testing means checking for memory leaks or other problems that may occur with prolonged execution."""},
 
 }
 
@@ -1318,6 +1208,8 @@ except ValueError as e:
     print('Invalid number of questions.')
     sys.exit(1)
     
+# Clear screen
+os.system('clear')
 
 for q in ask_q_list:
     # Ask questions.
