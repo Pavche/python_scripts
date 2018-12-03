@@ -949,8 +949,7 @@ if not question_list:
 
 # Questions that have already been learned. Exclude them.
 # This is a list of dictionary keys used for QUESTION_DICT.
-# TODO: Create exclusion list.
-exclusion_list = [16]
+exclusion_list = [16, 46]
 for elem in exclusion_list:
     question_list.remove(elem)
 
