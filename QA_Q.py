@@ -7,6 +7,7 @@ import os
 from subprocess import *
 
 # 202 Software Testing Interview Questions and Answers
+# Take your testing career to the next level, get ISTQB certified – http://istqbexamcertification.com
 
 QUESTION_DICT= {
 1: {'What is a Bug?': """
@@ -1022,6 +1023,281 @@ once they're implemented. Note that any level of testing (unit testing, system t
 any test design methods. Unit testing is usually associated with structural test design, but this is
 because testers usually don't have well-defined requirements at the unit level to validate."""},
 
+
+164: {'What kinds of testing should be considered?': """
+Below are the kinds of testing which should be considered:
+1) Black box testing can be considered which is not based on any knowledge of internal design or code. Tests are based on requirements and functionality.
+
+2) White box testing can also be considered which is based on knowledge of the internal logic of an application's code. Tests are based on coverage of code statements, branches, paths, conditions. 
+
+3) Unit testing - the most 'micro' scale of testing; to test particular functions or code modules. Unit testing is typically done by the programmer and not by testers, as it requires detailed knowledge of the internal program design and code. Not always easily done unless the application has a well-designed architecture with tight code; may require developing test driver modules or test harnesses. 
+
+4) Incremental integration testing - continuous testing of an application as new functionality is added; requires that various aspects of an application's functionality be independent enough to work separately before all parts of the program are completed, or that test drivers be developed as needed; done by programmers or by testers. integration testing - testing of combined parts of an application to determine if they function together correctly. The 'parts' can be code modules, individual applications, client and server applications on a network, etc. This type of testing is especially relevant to client/server and distributed systems. functional testing - black-box type testing geared to functional requirements of an application; this type of testing should be done by testers. This doesn't mean that the programmers shouldn't check that their code works before releasing it (which of course applies to any stage of testing.) system testing - black-box type testing that is based on overall requirements specifications; covers all combined parts of a system. end-to- end testing - similar to system testing; the 'macro' end of the test scale; involves testing of a complete application environment in a situation that mimics real-world use, such as interacting with a database, using network communications, or interacting with other hardware, applications, or systems if appropriate. 
+
+5) Sanity testing or smoke testing - typically an initial testing effort to determine if a new software version is performing well enough to accept it for a major testing effort. For example, if the new software is crashing systems every 5 minutes, bogging down systems to a crawl, or corrupting databases, the software may not be in a 'sane' enough condition to warrant further testing in its current state. 
+
+6) Regression testing - re-testing after fixes or modifications of the software or its environment. It can be difficult to determine how much re-testing is needed, especially near the end of the development cycle. Automated testing tools can be especially useful for this type of testing.
+
+7) Acceptance testing - final testing based on specifications of the end-user or customer, or based on use by end-users/customers over some limited period of time. load testing - testing an application under heavy loads, such as testing of a web site under a range of loads to determine at what point the system's response time degrades or fails. stress testing - term often used interchangeably with 'load' and 'performance' testing. Also used to describe such tests as system functional testing while under unusually heavy loads, heavy repetition of certain actions or inputs, input of large numerical values, large complex queries to a database system, etc. 
+
+8) Performance testing - term often used interchangeably with 'stress' and 'load' testing. Ideally 'performance' testing (and any other 'type' of testing) is defined in requirements documentation or QA or Test Plans. Usability testing - testing for 'user-friendliness'. Clearly this is subjective, and will depend on the targeted end-user or customer. User interviews, surveys, video recording of user sessions, and other techniques can be used. Programmers and testers are usually not appropriate as usability testers. install/uninstall testing - testing of full, partial, or upgrade install/uninstall processes.
+
+9) Recovery testing - testing how well a system recovers from crashes, hardware failures, or other catastrophic problems.
+
+10) Failover testing - typically used interchangeably with 'recovery testing' security testing - testing how well the system protects against unauthorized internal or external access, wilful damage, etc; may require sophisticated testing techniques.
+
+11) Compatibility testing - testing how well software performs in a particular hardware/software/operating system/network/etc. environment.
+
+12) Exploratory testing - often taken to mean a creative, informal software test that is not based on formal test plans or test cases; testers may be learning the software as they test it. Ad-hoc testing - similar to exploratory testing, but often taken to mean that the testers have significant understanding of the software before testing it. Context-driven testing - testing driven by an understanding of the environment, culture, and intended use of software. For example, the testing approach for life-critical medical equipment software would be completely different than that for a low-cost computer game. User acceptance testing is done to determine whether the software is satisfactory to an end-user or customer.
+
+13) Comparison testing is about comparing software weaknesses and strengths to competing products.
+
+14) Alpha testing - testing of an application when development is nearing completion; minor design changes may still be made as a result of such testing. Alpha testing is typically done by end-users or others, not by programmers or testers.
+
+15) Beta testing - testing when development and testing are essentially completed and final bugs and problems need to be found before final release. Beta testing is typically done by end-users or others, not by programmers or testers.
+
+16) Mutation testing - a method for determining if a set of test data or test cases is useful, by deliberately introducing various code changes ('bugs') and retesting with the original test data/cases to determine if the 'bugs' are detected. Proper implementation requires large computational resources."""},
+
+165: {'Why is it often hard for management to get serious about quality assurance?': """
+Solving problems is a high-visibility process; preventing problems is low-visibility. This is illustrated byan old parable:
+
+In ancient China there was a family of healers, one of whom was known throughoutthe land and employed as a physician to a great lord. The physician was asked which of his familywas the most skillful healer. He replied, "I tend to the sick and dying with drastic and dramatictreatments, and on occasion someone is cured and my name gets out among the lords.""My elderbrother cures sickness when it just begins to take root, and his skills are known among the localpeasants and neighbours." "My eldest brother is able to sense the spirit of sickness and eradicate itbefore it takes form. His name is unknown outside our home.\""""},
+
+166: {'Why does software have bugs?': """
+  1) Miscommunication or no communication - as to specifics of what an application should or shouldn't do (the application's requirements).
+  
+  2) Software complexity - the complexity of current software applications can be difficult to comprehend for anyone without experience in modern-day software development. Multi-tiered applications, client-server and distributed applications, datacommunications, enormous relational databases, and sheer size of applications have all contributedto the exponential growth in software/system complexity. programming errors - programmers, likeanyone else, can make mistakes.
+  
+  3) Changing requirements (whether documented or undocumented) - the end-user may not understand the effects of changes, or may understand and request themanyway - redesign, rescheduling of engineers, effects on other projects, work already completed thatmay have to be redone or thrown out, hardware requirements that may be affected, etc. If there aremany minor changes or any major changes, known and unknown dependencies among parts of theproject are likely to interact and cause problems, and the complexity of coordinating changes mayresult in errors. Enthusiasm of engineering staff may be affected. In some fast-changing businessenvironments, continuously modified requirements may be a fact of life. In this case, managementmust understand the resulting risks, and QA and test engineers must adapt and plan for continuousextensive testing to keep the inevitable bugs from running out of control.
+  
+  4) Poorly documented code - it's tough to maintain and modify code that is badly written or poorly documented; the result is bugs. Inmany organizations management provides no incentive for programmers to document their code orwrite clear, understandable, maintainable code. In fact, it's usually the opposite: they get points mostlyfor quickly turning out code, and there's job security if nobody else can understand it ('if it was hard towrite, it should be hard to read').
+  
+  5) software development tools - visual tools, class libraries,compilers, scripting tools, etc. often introduce their own bugs or are poorly documented, resulting inadded bugs. Also know about from where do defects and failures in software testing arise?"""},
+
+
+167: {'How can new Software QA processes be introduced in an existing organization?': """
+A lot depends on the size of the organization and the risks involved. For large organizations with high-
+risk (in terms of lives or property) projects, serious management buy-in is required and a formalized
+QA process is necessary. Where the risk is lower, management and organizational buy-in and QA
+implementation may be a slower, step-at-a-time process. QA processes should be balanced with
+productivity so as to keep bureaucracy from getting out of hand. For small groups or projects, a more
+ad-hoc process may be appropriate, depending on the type of customers and projects. A lot will
+depend on team leads or managers, feedback to developers, and ensuring adequate communications
+among customers, managers, developers, and testers. The most value for effort will often be in
+  (a) requirements management processes, with a goal of clear, complete, testable requirement
+specifications embodied in requirements or design documentation, or in 'agile'-type environments
+extensive continuous coordination with end-users, 
+  (b) design inspections and code inspections, and
+  (c) post-mortems/retrospectives."""},
+
+
+168: {'How do the companies expect the defect reporting to be communicated by the tester to the development team?': """
+Can the excel sheet template be used for defect reporting. If so what are the
+common fields that are included? Who assigns the priority and severity of the defect?'
+
+To report bugs in excel: S.no, Module Screen/ Section Issue detail, Severity, Priority, Issue status this
+is how to report bugs in excel sheet and also set filters on the Columns attributes. But most of the
+companies use the share point process of reporting bugs In this when the project came for testing a
+module wise detail of project is inserted to the defect management system they are using. It contains
+following field
+  1) Date
+  2) Issue brief
+  3) Issue description (used for developer to regenerate the issue)
+  4) Issue status (active, resolved, on hold, suspend and not able to regenerate)
+  5) Assign to (Names of members allocated to project)
+  6) Priority (High, medium and low)
+  7) severity (Major, medium and low)"""},
+
+169: {'What are the tables in test plans and test cases?': """
+Test plan is a document that contains the scope, approach, test design and test strategies. It includes
+the following:
+  1) Test case identifier
+  2) Scope
+  3) Features to be tested
+  4) Features not to be tested. 
+  5) Test strategy. 
+  6) Test Approach 
+  7) Test Deliverables 
+  8) Responsibilities. 
+  9) Staffing and Training 
+  10) Risk and Contingencies 
+  11) Approval While A test case is a noted/documented set of steps/activities
+that are carried out or executed on the software in order to confirm its functionality/behaviour to
+certain set of inputs."""},
+
+170: {'What are the table contents in test plans and test cases?': """
+Test Plan is a document which is prepared with the details of the testing priority. A test Plan generally includes:
+  1) Objective of Testing
+  2) Scope of Testing 
+  3) Reason for testing 
+  4) Timeframe 
+  5) Environment 
+  6) Entry and exit criteria 
+  7) Risk factors involved 
+  8) Deliverables"""},
+
+171: {'What automating testing tools are you familiar with?': """
+Win Runner, Load runner, QTP , Silk Performer, Test director, Rational robot, QA run."""},
+
+172: {'Why did you use automating testing tools in your job?': """
+Automating testing tools are used because of the following reasons:
+  1) For regression testing
+  2) Criteria to decide the condition of a particular build"""},
+
+173: {'How do you plan test automation?': """
+  1) Prepare the automation Test plan
+  2) Identify the scenario 3) Record the scenario
+  4) Enhance the scripts by inserting check points and Conditional Loops 
+  5) Incorporated Error Handler
+  6) Debug the script 
+  7) Fix the issue
+  8) Rerun the script and report the result."""},
+
+174: {'Can test automation improve test effectiveness?': """
+Yes, automating a test makes the test process:
+  - Fast
+  - Reliable
+  - Repeatable
+  - Programmable
+  - Reusable
+  - Comprehensive"""},
+
+175: {'What are the main attributes of test automation?': """
+software test automation attributes :
+  - Maintainability - the effort needed to update the test automation suites for each new release 
+  - Reliability - the accuracy and repeatability of the test automation
+  - Flexibility - the ease of working with all the different kinds of automation test ware
+  - Efficiency - the total cost related to the effort needed for the automation
+  - Portability - the ability of the automated test to run on different environments 
+  - Robustness - the effectiveness of automation on an unstable or rapidly changing system Usability - the extent to which automation can be used by different types of users"""},
+
+176: {'Does automation replace manual testing?': """
+There can be some functionality which cannot be tested in an automated tool so we may have to do it
+manually. Therefore manual testing can never be replaced. (We can write the scripts for negative
+testing also but it is hectic task).When we talk about real environment we do negative testing
+manually."""},
+
+177: {'How will you choose a tool for test automation?': """
+Choosing of a tool depends on many things like 1) Application to be tested 2) Test environment 3)
+Scope and limitation of the tool. 4) Feature of the tool 5) Cost of the tool 6) Whether the tool is
+compatible with your application which means tool should be able to interact with your application 7)
+Ease of use"""},
+
+178: {'How you will evaluate the tool for test automation?': """
+We need to concentrate on the features of the tools and how this could be beneficial for our project.
+The additional new features and the enhancements of the features will also help."""},
+
+179: {'What are main benefits of test automation?': """
+FAST, RELIABLE, COMPREHENSIVE, REUSABLE"""},
+
+180: {'What could go wrong with test automation?': """
+  1) The choice of automation tool for certain technologies
+  2) Wrong set of test automated"""},
+
+181: {'How you will describe testing activities?': """
+Testing activities start from the elaboration phase. The various testing activities are preparing the test
+plan, Preparing test cases, Execute the test case, Log the bug, validate the bug & take appropriate
+action for the bug, Automate the test cases."""},
+
+182: {'What testing activities you may want to automate?': """
+Automate all the high priority test cases which need to be executed as a part of regression testing for
+each build cycle."""},
+
+183: {'Describe common problems of test automation.': """
+The common problems are:
+  1) Maintenance of the old script when there is a feature change or enhancement
+  2) The change in technology of the application will affect the old scripts"""},
+
+184: {'What types of scripting techniques for test automation do you know?': """
+5 types of scripting techniques: 
+  1) Linear
+  2) Structured 
+  3) Shared 
+  4) Data Driven
+  5) Key Driven"""},
+
+185: {'What are principles of good testing scripts for automation?': """
+  1) Proper code guiding standards
+  2) Standard format for defining functions, exception handler etc
+  3) Comments for functions
+  4) Proper error handling mechanisms
+  5) The appropriate synchronisation techniques."""},
+
+186: {'Can the activities of test case design be automated?': """
+As I know it, test case design is about formulating the steps to be carried out to verify something
+about the application under test. And this cannot be automated. However, I agree that the process of
+putting the test results into the excel sheet."""},
+
+187: {'What are the limitations of automating software testing?': """
+Hard-to-create environments like “out of memory”, “invalid input/reply”, and “corrupt registry entries”
+make applications behave poorly and existing automated tools can’t force these condition - they
+simply test your application in “normal” environment."""},
+
+188: {'What skills needed to be a good test automator?': """
+  1) Good Logic for programming.
+  2) Strong analytical skills
+  3) Pessimistic in Nature."""},
+
+189: {'How to find that tools work well with your existing system?': """
+  1) Discuss with the support officials 
+  2) Download the trial version of the tool and evaluate
+  3) Get suggestions from people who are working on the tool"""},
+
+190: {'Describe some problem that you had with automating testing tool.':"""
+  1) The inability of win runner to identify the third party control like infragistics controls
+  2) The change of the location of the table object will cause object not found error.
+  3) The inability of the win runner to execute the script against multiple languages"""},
+
+191: {'What are the main attributes of test automation?': """
+Maintainability, Reliability, Flexibility, Efficiency, Portability, Robustness, and Usability - these are the
+main attributes in test automation."""},
+
+192: {'What testing activities you may want to automate in a project?': """
+Testing tools can be used for : Sanity tests(which is repeated on every build), stress/Load tests(U
+simulate a large no of users, which is manually impossible) & Regression tests(which are done after
+every code change)"""},
+
+193: {'How to find that tools work well with your existing system?': """
+To find this, select the suite of tests which are most important for your application. First run them with
+automated tool. Next subject the same tests to careful manual testing. If the results are coinciding you
+can say your testing tool has been performing."""},
+
+194: {'How will you test the field that generates auto numbers of AUT when we click the button "NEW" in the application?': """
+We can create a text file in a certain location, and update the auto generated value each time we run
+the test and compare the currently generated value with the previous one will be one solution."""},
+
+195: {'How will you evaluate the fields in the application under test using automation tool?': """
+We can use Verification points (rational Robot) to validate the fields .Ex Using object data, object data
+properties VP we can validate fields."""},
+
+196: {'Can we perform the test of single application at the same time using different tools on the same machine?': """
+No. The Testing Tools will be in the ambiguity to determine which browser is opened by which tool."""},
+
+197: {'What is \'configuration management\'?': """
+Configuration management is a process to control and document any changes made during the life of
+a project. Revision control, Change Control, and Release Control are important aspects of
+Configuration Management."""},
+
+198: {'How to test the Web applications?': """
+The basic difference in web testing is here we have to test for URL's coverage and links coverage.
+Using Win Runner we can conduct web testing. But we have to make sure that Web test option is
+selected in "Add in Manager". Using WR we cannot test XML objects."""},
+
+199: {'What are the problems encountered during the testing the application compatibility on different browsers and on different operating systems?':"""
+Font issues, alignment issues"""},
+
+200: {'How exactly the testing the application compatibility on different browsers and on different operating systems is done?': """
+Compatibility testing is a type of software testing used to ensure compatibility of the
+system/application/website built with various other objects such as other web browsers, hardware
+platforms, users"""},
+
+201: {'How testing is proceeded when SRS or any other document is not given?': """
+If SRS is not there we can perform Exploratory testing. In Exploratory testing the basic module is
+executed and depending on its results, the next plan is executed."""},
+
+202: {'How do we test for severe memory leakages?': """
+Severe memory leakages can be tested by using Endurance Testing . Endurance Testing means
+checking for memory leaks or other problems that may occur with prolonged execution."""},
 
 }
 
