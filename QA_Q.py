@@ -6,14 +6,13 @@ import sys
 import os
 from subprocess import *
 
-# 202 Software Testing Interview Questions and Answers
+# Extract from: 
+# Download 200+ Software Testing Interview Questions and Answers PDF
 # Take your testing career to the next level, get ISTQB certified – http://istqbexamcertification.com
 
 QUESTION_DICT= {
 1: {'What is a Bug?': """
-When actual result deviates from the expected result while testing a software application or product
-then it results into a defect. Hence, any deviation from the specification mentioned in the product
-functional specification document is a defect. In different organizations it's called a Bug."""},
+When actual result deviates from the expected result while testing a software application or product then it results into a defect. Hence, any deviation from the specification mentioned in the product functional specification document is a defect. In different organizations it's called a Bug."""},
 
 2: {'What is a Defect?':"""
 If software misses some feature or function from what is there in requirement it is called as defect."""},
@@ -419,7 +418,7 @@ A program or test tool used to execute a test. Also known as a Test Harness."""}
 The hardware and software environment in which tests will be run, and any other software with which the software under test interacts when under test including stubs and test drivers."""},
 
 116: {'What is Test First Design?': """
-Test-first design is one of the mandatory practices of Extreme Programming (XP).It requires that programmers do not write any production code until they have first written a unit test."""},
+Test-first design is one of the mandatory practices of Extreme Programming (XP). It requires that programmers do not write any production code until they have first written a unit test."""},
 
 117: {'What is Test Harness?': """
 A program or test tool used to execute tests. Also known as a Test Driver."""},
@@ -448,15 +447,10 @@ tests related by what they are intended to test."""},
 Computer programs used for the testing of a system, a component of the system, or its documentation is called a test tool."""},
 
 124: {'What is Thread Testing?': """
-A variation of top-down testing where the progressive integration of components follows the
-implementation of subsets of the requirements, as opposed to the integration of components by
-successively lower levels."""},
+A variation of top-down testing where the progressive integration of components follows the implementation of subsets of the requirements, as opposed to the integration of components by successively lower levels."""},
 
 125: {'What is Top Down Testing?': """
-Top down testing is an approach to integration testing where the component at the top of the
-component hierarchy is tested first, with lower level components being simulated by stubs. Tested
-components are then used to test lower level components. The process is repeated until the lowest
-level components have been tested."""},
+Top down testing is an approach to integration testing where the component at the top of the component hierarchy is tested first, with lower level components being simulated by stubs. Tested components are then used to test lower level components. The process is repeated until the lowest level components have been tested."""}, 
 
 126: {'What is Total Quality Management?': """
 Total Quality Management is a company commitment to develop a process that achieves high quality product and customer satisfaction."""},
@@ -477,77 +471,31 @@ Testing of individual software components is called Unit testing."""},
 The process of evaluating software at the end of the software development process to ensure compliance with software requirements is called Validation."""},
 
 132: {'What is Verification?': """
-The process of determining whether or not the products of a given phase of the software development
-cycle meet the implementation steps and can be traced to the incoming objectives established during
-the previous phase."""},
+The process of determining whether or not the products of a given phase of the software development cycle meet the implementation steps and can be traced to the incoming objectives established during the previous phase."""},
 
 133: {'What is White Box Testing?': """
-Testing based on an analysis of internal workings and structure of a piece of software. This includes
-techniques such as Branch Testing and Path Testing. This also known as Structural Testing and
-Glass Box Testing. Contrast with Black Box Testing. White box testing is used to test the internal logic
-of the code for ex checking whether the path has been executed once, checking whether the
-branches has been executed at least once .This is used to check the structure of the code."""},
+Testing based on an analysis of internal workings and structure of a piece of software. This includes techniques such as Branch Testing and Path Testing. This also known as Structural Testing and Glass Box Testing. Contrast with Black Box Testing. White box testing is used to test the internal logic of the code for ex checking whether the path has been executed once, checking whether the branches has been executed at least once .This is used to check the structure of the code."""},
 
 134: {'What is Workflow Testing?': """
-Workflow processes technique in software testing by routing a record through each possible path.
-These tests are performed to ensure that each workflow process accurately reflects the business
-process. This kind of testing holds good for workflow-based applications."""},
+Workflow processes technique in software testing by routing a record through each possible path. These tests are performed to ensure that each workflow process accurately reflects the business process. This kind of testing holds good for workflow-based applications."""},
 
 135: {'What\'s the difference between load and stress testing ?': """
-One of the most common, but unfortunate misuse of terminology is treating “load testing” and “stress
-testing” as synonymous. The consequence of this ignorant semantic abuse is usually that the system
-is neither properly “load tested” nor subjected to a meaningful stress test. Stress testing is subjecting
-a system to an unreasonable load while denying it the resources (e.g., RAM, disc, mips, interrupts,
-etc.) needed to process that load. The idea is to stress a system to the breaking point in order to find
-bugs that will make that break potentially harmful. The system is not expected to process the overload
-without adequate resources, but to behave (e.g., fail) in a decent manner (e.g., not corrupting or
-losing data). Bugs and failure modes discovered under stress testing may or may not be repaired
-depending on the application, the failure mode, consequences, etc. The load (incoming transaction
-stream) in stress testing is often deliberately distorted so as to force the system into resource
-depletion. Load testing is subjecting a system to a statistically representative (usually) load. The two
-main reasons for using such loads is in support of software reliability testing and in performance
-testing. The term 'load testing' by itself is too vague and imprecise to warrant use. For example, do
-you mean representative load,' 'overload,' 'high load,' etc. In performance testing, load is varied from a
-minimum (zero) to the maximum level the system can sustain without running out of resources or
-having, transactions >suffer (application-specific) excessive delay. A third use of the term is as a test
-whose objective is to determine the maximum sustainable load the system can handle. In this usage,
-'load testing' is merely testing at the highest transaction arrival rate in performance testing."""},
+One of the most common, but unfortunate misuse of terminology is treating “load testing” and “stress testing” as synonymous. The consequence of this ignorant semantic abuse is usually that the system is neither properly “load tested” nor subjected to a meaningful stress test. Stress testing is subjecting a system to an unreasonable load while denying it the resources (e.g., RAM, disc, mips, interrupts, etc.) needed to process that load. The idea is to stress a system to the breaking point in order to find bugs that will make that break potentially harmful. The system is not expected to process the overload without adequate resources, but to behave (e.g., fail) in a decent manner (e.g., not corrupting or losing data). Bugs and failure modes discovered under stress testing may or may not be repaired depending on the application, the failure mode, consequences, etc. The load (incoming transaction stream) in stress testing is often deliberately distorted so as to force the system into resource depletion. Load testing is subjecting a system to a statistically representative (usually) load. The two main reasons for using such loads is in support of software reliability testing and in performance testing. The term 'load testing' by itself is too vague and imprecise to warrant use. For example, do you mean representative load,' 'overload,' 'high load,' etc. In performance testing, load is varied from a minimum (zero) to the maximum level the system can sustain without running out of resources or having, transactions >suffer (application-specific) excessive delay. A third use of the term is as a test whose objective is to determine the maximum sustainable load the system can handle. In this usage, 'load testing' is merely testing at the highest transaction arrival rate in performance testing."""},  
 
 136: {'What\'s the difference between QA and testing?': """
-QA is more a preventive thing, ensuring quality in the company and therefore the product rather than
-just testing the product for software bugs? TESTING means 'quality control' QUALITY CONTROL
-measures the quality of a product QUALITY ASSURANCE measures the quality of processes used to
-create a quality product."""},
+QA is more a preventive thing, ensuring quality in the company and therefore the product rather than just testing the product for software bugs? TESTING means 'quality control' QUALITY CONTROL measures the quality of a product QUALITY ASSURANCE measures the quality of processes used to create a quality product."""}, 
 
 137: {'What is the best tester to developer ratio?': """
-Tester : developer ratios range from 10:1 to 1:10. There's no simple answer. It depends on so many
-things, Amount of reused code, number and type of interfaces, platform, quality goals, etc. It also can
-depend on the development model. The more specs, the less testers. The roles can play a big part
-also. Does QA own beta? Do you include process auditors or planning activities? These figures can
-all vary very widely depending on how you define 'tester' and 'developer'. In some organizations, a
-'tester' is anyone who happens to be testing software at the time -- such as their own. In other
-organizations, a 'tester' is only a member of an independent test group. It is better to ask about the
-test labour content than it is to ask about the tester/developer ratio. The test labour content, across
-most applications is generally accepted as 50%, when people do honest accounting. For life-critical
-software, this can go up to 80%."""},
+Tester : developer ratios range from 10:1 to 1:10. There's no simple answer. It depends on so many things, Amount of reused code, number and type of interfaces, platform, quality goals, etc. It also can depend on the development model. The more specs, the less testers. The roles can play a big part also. Does QA own beta? Do you include process auditors or planning activities? These figures can all vary very widely depending on how you define 'tester' and 'developer'. In some organizations, a 'tester' is anyone who happens to be testing software at the time -- such as their own. In other organizations, a 'tester' is only a member of an independent test group. It is better to ask about the test labour content than it is to ask about the tester/developer ratio. The test labour content, across most applications is generally accepted as 50%, when people do honest accounting. For life-critical software, this can go up to 80%."""}, 
 
 138: {'How can new Software QA processes be introduced in an existing organization?': """
-- A lot depends on the size of the organization and the risks involved. For large organizations with
-high-risk (in terms of lives or property) projects, serious management buy-in is required and a
-formalized QA process is necessary. 
+- A lot depends on the size of the organization and the risks involved. For large organizations with high-risk (in terms of lives or property) projects, serious management buy-in is required and a formalized QA process is necessary. 
 
-- Where the risk is lower, management and organizational buy-in
-and QA implementation may be a slower, step-at-a-time process. QA processes should be balanced
-with productivity so as to keep bureaucracy from getting out of hand. 
+- Where the risk is lower, management and organizational buy-in and QA implementation may be a slower, step-at-a-time process. QA processes should be balanced with productivity so as to keep bureaucracy from getting out of hand. 
 
-- For small groups or projects, a
-more ad-hoc process may be appropriate, depending on the type of customers and projects. A lot will
-depend on team leads or managers, feedback to developers, and ensuring adequate communications
-among customers, managers, developers, and testers. 
+- For small groups or projects, a more ad-hoc process may be appropriate, depending on the type of customers and projects. A lot will depend on team leads or managers, feedback to developers, and ensuring adequate communications among customers, managers, developers, and testers. 
 
-- In all cases the most value for effort will be in
-requirements management processes, with a goal of clear, complete, testable requirement
-specifications or expectations."""},
+- In all cases the most value for effort will be in requirements management processes, with a goal of clear, complete, testable requirement specifications or expectations."""},
 
 139: {'What are 5 common problems in the software development process?': """
 The 5 common problems in the software development process are as follows:
@@ -582,28 +530,38 @@ metrics, such as McCabe Complexity metrics. It should be kept in mind that exces
 standards and rules can stifle productivity and creativity. 'Peer reviews', 'buddy checks' code analysis
 tools, etc. can be used to check for problems and enforce standards. For C and C++ coding, here are
 some typical ideas to consider in setting rules/standards; these may or may not apply to a particular
-situation: - minimize or eliminate use of global variables. - use descriptive function and method names
+situation: - minimize or eliminate use of global variables.
+
+- use descriptive function and method names
 - use both upper and lower case, avoid abbreviations, use as many characters as necessary to be
 adequately descriptive (use of more than 20 characters is not out of line); be consistent in naming
-conventions. - use descriptive variable names - use both upper and lower case, avoid abbreviations,
+conventions.
+
+- use descriptive variable names - use both upper and lower case, avoid abbreviations,
 use as many characters as necessary to be adequately descriptive (use of more than 20 characters is
-not out of line); be consistent in naming conventions. - function and method sizes should be
-minimized; less than 100 lines of code is good, less than 50 lines is preferable. - function descriptions
-should be clearly spelled out in comments preceding a function's code.- organize code for readability.
+not out of line); be consistent in naming conventions.
+
+- function and method sizes should be
+minimized; less than 100 lines of code is good, less than 50 lines is preferable.
+
+- function descriptions
+should be clearly spelled out in comments preceding a function's code.
+
+- organize code for readability.
 - use whitespace generously - vertically and horizontally - each line of code should contain 70
-characters max. - one code statement per line. - coding style should be consistent throughout a
+characters max.
+- one code statement per line.
+
+- coding style should be consistent throughout a
 program (eg, use of brackets, indentations, naming conventions, etc.) - in adding comments, err on
 the side of too many rather than too few comments; a common rule of thumb is that there should be at
-least as many lines of comments (including header blocks) as lines of code. - no matter how small, an
-application should include documentation of the overall program function and flow (even a few
-paragraphs is better than nothing); or if possible a separate flow chart and detailed program
-documentation. - make extensive use of error handling procedures and status and error logging. 
+least as many lines of comments (including header blocks) as lines of code.
 
-- For
-C++, to minimize complexity and increase maintainability, avoid too many levels of inheritance in
-class hierarchies (relative to the size and complexity of the application). Minimize use of multiple
-inheritance, and minimize use of operator overloading (note that the Java programming language
-eliminates multiple inheritance and operator overloading.) 
+- no matter how small, an application should include documentation of the overall program function and flow (even a few paragraphs is better than nothing); or if possible a separate flow chart and detailed program documentation. 
+
+- make extensive use of error handling procedures and status and error logging. 
+
+- For C++, to minimize complexity and increase maintainability, avoid too many levels of inheritance in class hierarchies (relative to the size and complexity of the application). Minimize use of multiple inheritance, and minimize use of operator overloading (note that the Java programming language eliminates multiple inheritance and operator overloading.) 
 
 - For C++, keep class methods small, less
 than 50 lines of code per method is preferable. 
@@ -642,15 +600,14 @@ and diplomacy are especially needed. An ability to find problems as well as to s
 important for inspections and reviews."""},
 
 145: {'What makes a good QA or Test manager?': """
-A good QA, test, or QA/Test(combined) manager should: - be familiar with the software development
-process - be able to maintain enthusiasm of their team and promote a positive atmosphere, despite
-what is a somewhat 'negative' process (e.g., looking for or preventing problems) - be able to promote
-teamwork to increase productivity - be able to promote cooperation between software, test, and QA
-engineers - have the diplomatic skills needed to promote improvements in QA processes -have the
-ability to withstand pressures and say 'no' to other managers when quality is insufficient or QA
-processes are not being adhered to - have people judgement skills for hiring and keeping skilled
-personnel- be able to communicate with technical and non-technical people, engineers, managers,
-and customers. - be able to run meetings and keep them focused"""},
+A good QA, test, or QA/Test(combined) manager should:
+  - be familiar with the software development process
+  - be able to maintain enthusiasm of their team and promote a positive atmosphere, despite what is a somewhat 'negative' process (e.g., looking for or preventing problems) - be able to promote teamwork to increase productivity 
+  - be able to promote cooperation between software, test, and QA engineers 
+  - have the diplomatic skills needed to promote improvements in QA processes -have the ability to withstand pressures and say 'no' to other managers when quality is insufficient or QA processes are not being adhered to
+  - have people judgement skills for hiring and keeping skilled personnel
+  - be able to communicate with technical and non-technical people, engineers, managers, and customers.
+  - be able to run meetings and keep them focused"""},
 
 146: {'What\'s the role of documentation in QA?': """
 The role of documentation in QA is Critical. (Note that documentation can be electronic, not
@@ -714,17 +671,10 @@ requirements, documentation, problems, change requests, designs, tools/compilers
 changes made to them, and who makes the changes."""},
 
 150: {'What if the software is so buggy it can\'t really be tested at all?': """
-The best bet in this situation is for the testers to go through the process of reporting whatever bugs or
-blocking-type problems initially show up, with the focus being on critical bugs. Since this type of
-problem can severely affect schedules, and indicates deeper problems in the software development
-process (such as insufficient unit testing or insufficient integration testing, poor design, improper build
-or release procedures, etc.) managers should be notified, and provided with some documentation as
-evidence of the problem. Know more about Severity and Priority"""},
+The best bet in this situation is for the testers to go through the process of reporting whatever bugs or blocking-type problems initially show up, with the focus being on critical bugs. Since this type of problem can severely affect schedules, and indicates deeper problems in the software development process (such as insufficient unit testing or insufficient integration testing, poor design, improper build or release procedures, etc.) managers should be notified, and provided with some documentation as evidence of the problem. Know more about Severity and Priority"""},
 
 151: {'How can it be known when to stop testing?': """
-This can be difficult to determine. Many modern software applications are so complex, and run in
-such an interdependent environment, that complete testing can never be done. Common factors in
-deciding when to stop are:  
+This can be difficult to determine. Many modern software applications are so complex, and run in such an interdependent environment, that complete testing can never be done. Common factors in deciding when to stop are:  
 - Deadlines (release deadlines, testing deadlines, etc.)  
 - Test cases completed with certain percentage passed  
 - Test budget depleted  
@@ -733,11 +683,9 @@ deciding when to stop are:
 - Beta or alpha testing period ends"""},
 
 152: {'What if there isn\'t enough time for thorough testing?': """
-Use risk analysis to determine where testing should be focused. Since it's rarely possible to test every
-possible aspect of an application, every possible combination of events, every dependency, or
-everything that could go wrong, risk analysis is appropriate to most software development projects.
-This requires judgement skills, common sense, and experience. (If warranted, formal methods are
-also available.) Considerations can include:  
+Use risk analysis to determine where testing should be focused. Since it's rarely possible to test every possible aspect of an application, every possible combination of events, every dependency, or everything that could go wrong, risk analysis is appropriate to most software development projects.
+
+This requires judgement skills, common sense, and experience. (If warranted, formal methods are also available.) Considerations can include:  
 - Which functionality is most important to the project's intended purpose?  
 - Which functionality is most visible to the user?  
 - Which functionality has the largest safety impact?  
@@ -856,7 +804,9 @@ problems to be accounted for in testing?- How extensive or customized are the se
 reporting requirements; are they considered an integral part of the system and do they require
 testing?
   - How are cgi programs, applets, java scripts, ActiveX components, etc. to be maintained, tracked, controlled, and tested?
-  - Pages should be 3-5 screens max unless content is tightly focused on a single topic. If larger, provide internal links within the page. - The page layouts and design elements should be consistent throughout a site, so that it's clear to the user that they're still within a site.
+  - Pages should be 3-5 screens max unless content is tightly focused on a single topic. If larger, provide internal links within the page.
+
+- The page layouts and design elements should be consistent throughout a site, so that it's clear to the user that they're still within a site.
   - Pages should be as browser-independent as possible, or pages should be provided or generated based on the browser-type.
   - All pages should have links external to the page; there should be no dead-end pages.
   - The page owner, revision date, and a link to a contact person or organization should be included on each page."""},
@@ -881,7 +831,9 @@ scheduling, re-estimating, and re-prioritizing is expected."""},
 
 162: {'Will automated testing tools make testing easier?': """
 - Possibly. For small projects, the time needed to learn and implement them may not be worth it. For
-larger projects, or on-going long-term projects they can be valuable. - A common type of automated
+larger projects, or on-going long-term projects they can be valuable.
+
+- A common type of automated
 tool is the 'record/playback' type. For example, a tester could click through all combinations of menu
 choices, dialog box choices, buttons, etc. in an application GUI and have them 'recorded' and the
 results logged by a tool. The 'recording' is typically in the form of text based on a scripting language
@@ -891,8 +843,9 @@ actions, and comparing the logging results to check effects of the changes. The 
 tools is that if there are continual changes to the system being tested, the 'recordings' may have to be
 changed so much that it becomes very time-consuming to continuously update the scripts.
 Additionally, interpretation of results (screens, data, logs, etc.) can be a difficult task. Note that there
-are record/playback tools for text-based interfaces also, and for all types of platforms.- Other
-automated tools can include:
+are record/playback tools for text-based interfaces also, and for all types of platforms.
+
+- Other automated tools can include:
   1) code analyzers - monitor code complexity, adherence to standards, etc.
   2) coverage analyzers - these tools check which parts of the code have been exercised by a test, and
 may be oriented to code statement coverage, condition coverage, path coverage, etc. memory
@@ -904,22 +857,11 @@ reporting, and configuration management."""},
 
 
 163: {'What\'s the difference between black box and white box testing?': """
-Black-box and white-box are test design methods. Black-box test design treats the system as a
-“black-box”, so it doesn't explicitly use knowledge of the internal structure. Black-box test design is
-usually described as focusing on testing functional requirements. Synonyms for black-box include:
-behavioural, functional, opaque-box, and closed-box. White-box test design allows one to peek inside
-the “box”, and it focuses specifically on using internal knowledge of the software to guide the selection
-of test data. Synonyms for white-box include: structural, glass-box and clear-box. While black-box and
-white-box are terms that are still in popular use, many people prefer the terms 'behavioural' and
-'structural'. Behavioural test design is slightly different from black-box test design because the use of
-internal knowledge isn\'t strictly forbidden, but it's still discouraged. In practice, it hasn't proven useful
-to use a single test design method. One has to use a mixture of different methods so that they aren't
-hindered by the limitations of a particular one. Some call this 'gray-box' or 'translucent-box' test
-design, but others wish we'd stop talking about boxes altogether. It is important to understand that
-these methods are used during the test design phase, and their influence is hard to see in the tests
-once they're implemented. Note that any level of testing (unit testing, system testing, etc.) can use
-any test design methods. Unit testing is usually associated with structural test design, but this is
-because testers usually don't have well-defined requirements at the unit level to validate."""},
+  1) Black-box and white-box are test design methods. Black-box test design treats the system as a “black-box”, so it doesn't explicitly use knowledge of the internal structure. Black-box test design is usually described as focusing on testing functional requirements. 
+  
+  Synonyms for black-box include: behavioural, functional, opaque-box, and closed-box. 
+
+  2) White-box test design allows one to peek inside the “box”, and it focuses specifically on using internal knowledge of the software to guide the selection of test data. Synonyms for white-box include: structural, glass-box and clear-box. While black-box and white-box are terms that are still in popular use, many people prefer the terms 'behavioural' and 'structural'. Behavioural test design is slightly different from black-box test design because the use of internal knowledge isn\'t strictly forbidden, but it's still discouraged. In practice, it hasn't proven useful to use a single test design method. One has to use a mixture of different methods so that they aren't hindered by the limitations of a particular one. Some call this 'gray-box' or 'translucent-box' test design, but others wish we'd stop talking about boxes altogether. It is important to understand that these methods are used during the test design phase, and their influence is hard to see in the tests once they're implemented. Note that any level of testing (unit testing, system testing, etc.) can use any test design methods. Unit testing is usually associated with structural test design, but this is because testers usually don't have well-defined requirements at the unit level to validate."""},
 
 
 164: {'What kinds of testing should be considered?': """
@@ -974,14 +916,7 @@ In ancient China there was a family of healers, one of whom was known throughout
 
 
 167: {'How can new Software QA processes be introduced in an existing organization?': """
-A lot depends on the size of the organization and the risks involved. For large organizations with high-
-risk (in terms of lives or property) projects, serious management buy-in is required and a formalized
-QA process is necessary. Where the risk is lower, management and organizational buy-in and QA
-implementation may be a slower, step-at-a-time process. QA processes should be balanced with
-productivity so as to keep bureaucracy from getting out of hand. For small groups or projects, a more
-ad-hoc process may be appropriate, depending on the type of customers and projects. A lot will
-depend on team leads or managers, feedback to developers, and ensuring adequate communications
-among customers, managers, developers, and testers. The most value for effort will often be in
+A lot depends on the size of the organization and the risks involved. For large organizations with high- risk (in terms of lives or property) projects, serious management buy-in is required and a formalized QA process is necessary. Where the risk is lower, management and organizational buy-in and QA implementation may be a slower, step-at-a-time process. QA processes should be balanced with productivity so as to keep bureaucracy from getting out of hand. For small groups or projects, a more ad-hoc process may be appropriate, depending on the type of customers and projects. A lot will depend on team leads or managers, feedback to developers, and ensuring adequate communications among customers, managers, developers, and testers. The most value for effort will often be in
   (a) requirements management processes, with a goal of clear, complete, testable requirement
 specifications embodied in requirements or design documentation, or in 'agile'-type environments
 extensive continuous coordination with end-users, 
@@ -990,14 +925,9 @@ extensive continuous coordination with end-users,
 
 
 168: {'How do the companies expect the defect reporting to be communicated by the tester to the development team?': """
-Can the excel sheet template be used for defect reporting. If so what are the
-common fields that are included? Who assigns the priority and severity of the defect?'
+Can the excel sheet template be used for defect reporting. If so what are the common fields that are included? Who assigns the priority and severity of the defect?'
 
-To report bugs in excel: S.no, Module Screen/ Section Issue detail, Severity, Priority, Issue status this
-is how to report bugs in excel sheet and also set filters on the Columns attributes. But most of the
-companies use the share point process of reporting bugs In this when the project came for testing a
-module wise detail of project is inserted to the defect management system they are using. It contains
-following field
+To report bugs in excel: S.no, Module Screen/ Section Issue detail, Severity, Priority, Issue status this is how to report bugs in excel sheet and also set filters on the Columns attributes. But most of the companies use the share point process of reporting bugs In this when the project came for testing a module wise detail of project is inserted to the defect management system they are using. It contains following field
   1) Date
   2) Issue brief
   3) Issue description (used for developer to regenerate the issue)
@@ -1019,9 +949,7 @@ the following:
   8) Responsibilities. 
   9) Staffing and Training 
   10) Risk and Contingencies 
-  11) Approval While A test case is a noted/documented set of steps/activities
-that are carried out or executed on the software in order to confirm its functionality/behaviour to
-certain set of inputs."""},
+  11) Approval While A test case is a noted/documented set of steps/activities that are carried out or executed on the software in order to confirm its functionality/behaviour to certain set of inputs."""},
 
 170: {'What are the table contents in test plans and test cases?': """
 Test Plan is a document which is prepared with the details of the testing priority. A test Plan generally includes:
@@ -1070,16 +998,17 @@ software test automation attributes :
   - Robustness - the effectiveness of automation on an unstable or rapidly changing system Usability - the extent to which automation can be used by different types of users"""},
 
 176: {'Does automation replace manual testing?': """
-There can be some functionality which cannot be tested in an automated tool so we may have to do it
-manually. Therefore manual testing can never be replaced. (We can write the scripts for negative
-testing also but it is hectic task).When we talk about real environment we do negative testing
-manually."""},
+There can be some functionality which cannot be tested in an automated tool so we may have to do it manually. Therefore manual testing can never be replaced. (We can write the scripts for negative testing also but it is hectic task).When we talk about real environment we do negative testing manually."""},
 
 177: {'How will you choose a tool for test automation?': """
-Choosing of a tool depends on many things like 1) Application to be tested 2) Test environment 3)
-Scope and limitation of the tool. 4) Feature of the tool 5) Cost of the tool 6) Whether the tool is
-compatible with your application which means tool should be able to interact with your application 7)
-Ease of use"""},
+Choosing of a tool depends on many things like:
+  1) Application to be tested
+  2) Test environment
+  3) Scope and limitation of the tool.
+  4) Feature of the tool
+  5) Cost of the tool
+  6) Whether the tool is compatible with your application which means tool should be able to interact with your application
+  7) Ease of use"""},
 
 178: {'How you will evaluate the tool for test automation?': """
 We need to concentrate on the features of the tools and how this could be beneficial for our project. The additional new features and the enhancements of the features will also help."""},
@@ -1091,9 +1020,7 @@ FAST, RELIABLE, COMPREHENSIVE, REUSABLE"""},
   1) The choice of automation tool for certain technologies   2) Wrong set of test automated"""},
 
 181: {'How you will describe testing activities?': """
-Testing activities start from the elaboration phase. The various testing activities are preparing the test
-plan, Preparing test cases, Execute the test case, Log the bug, validate the bug & take appropriate
-action for the bug, Automate the test cases."""},
+Testing activities start from the elaboration phase. The various testing activities are preparing the test plan, Preparing test cases, Execute the test case, Log the bug, validate the bug & take appropriate action for the bug, Automate the test cases."""},
 
 182: {'What testing activities you may want to automate?': """
 Automate all the high priority test cases which need to be executed as a part of regression testing for each build cycle."""},
@@ -1119,14 +1046,10 @@ The common problems are:
   5) The appropriate synchronisation techniques."""},
 
 186: {'Can the activities of test case design be automated?': """
-As I know it, test case design is about formulating the steps to be carried out to verify something
-about the application under test. And this cannot be automated. However, I agree that the process of
-putting the test results into the excel sheet."""},
+As I know it, test case design is about formulating the steps to be carried out to verify something about the application under test. And this cannot be automated. However, I agree that the process of putting the test results into the excel sheet."""},
 
 187: {'What are the limitations of automating software testing?': """
-Hard-to-create environments like “out of memory”, “invalid input/reply”, and “corrupt registry entries”
-make applications behave poorly and existing automated tools can’t force these condition - they
-simply test your application in “normal” environment."""},
+Hard-to-create environments like “out of memory”, “invalid input/reply”, and “corrupt registry entries” make applications behave poorly and existing automated tools can’t force these condition - they simply test your application in “normal” environment."""},
 
 188: {'What skills needed to be a good test automator?': """
   1) Good Logic for programming.
@@ -1147,14 +1070,10 @@ simply test your application in “normal” environment."""},
 Maintainability, Reliability, Flexibility, Efficiency, Portability, Robustness, and Usability - these are the main attributes in test automation."""},
 
 192: {'What testing activities you may want to automate in a project?': """
-Testing tools can be used for : Sanity tests(which is repeated on every build), stress/Load tests(U
-simulate a large no of users, which is manually impossible) & Regression tests(which are done after
-every code change)"""},
+Testing tools can be used for : Sanity tests(which is repeated on every build), stress/Load tests(U simulate a large no of users, which is manually impossible) & Regression tests(which are done after every code change)"""},
 
 193: {'How to find that tools work well with your existing system?': """
-To find this, select the suite of tests which are most important for your application. First run them with
-automated tool. Next subject the same tests to careful manual testing. If the results are coinciding you
-can say your testing tool has been performing."""},
+To find this, select the suite of tests which are most important for your application. First run them with automated tool. Next subject the same tests to careful manual testing. If the results are coinciding you can say your testing tool has been performing."""},
 
 194: {'How will you test the field that generates auto numbers of AUT when we click the button "NEW" in the application?': """
 We can create a text file in a certain location, and update the auto generated value each time we run the test and compare the currently generated value with the previous one will be one solution."""},
@@ -1166,9 +1085,7 @@ We can use Verification points (rational Robot) to validate the fields .Ex Using
 No. The Testing Tools will be in the ambiguity to determine which browser is opened by which tool."""},
 
 197: {'What is \'configuration management\'?': """
-Configuration management is a process to control and document any changes made during the life of
-a project. Revision control, Change Control, and Release Control are important aspects of
-Configuration Management."""},
+Configuration management is a process to control and document any changes made during the life of a project. Revision control, Change Control, and Release Control are important aspects of Configuration Management."""},
 
 198: {'How to test the Web applications?': """
 The basic difference in web testing is here we have to test for URL's coverage and links coverage.
@@ -1179,9 +1096,7 @@ selected in "Add in Manager". Using WR we cannot test XML objects."""},
 Font issues, alignment issues"""},
 
 200: {'How exactly the testing the application compatibility on different browsers and on different operating systems is done?': """
-Compatibility testing is a type of software testing used to ensure compatibility of the
-system/application/website built with various other objects such as other web browsers, hardware
-platforms, users"""},
+Compatibility testing is a type of software testing used to ensure compatibility of the system/application/website built with various other objects such as other web browsers, hardware platforms, users"""},
 
 201: {'How testing is proceeded when SRS or any other document is not given?': """
 If SRS is not there we can perform Exploratory testing. In Exploratory testing the basic module is executed and depending on its results, the next plan is executed."""},
