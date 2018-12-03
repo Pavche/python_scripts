@@ -483,33 +483,40 @@ The 5 common solutions to software development problems as given below:
 141: {'What is a \'good code\'?': """
 'Good code' is a code that works, is bug free, and is readable and maintainable. Some organizations have coding 'standards' that all developers are supposed to adhere to, but everyone has different ideas about what\'s best, or what is too many or too few rules. There are also various theories and metrics, such as McCabe Complexity metrics. It should be kept in mind that excessive use of standards and rules can stifle productivity and creativity. 'Peer reviews', 'buddy checks' code analysis tools, etc. can be used to check for problems and enforce standards. For C and C++ coding, here are some typical ideas to consider in setting rules/standards; these may or may not apply to a particular situation:
   - minimize or eliminate use of global variables.
+  
   - use descriptive function and method names
+  
   - use both upper and lower case, avoid abbreviations, use as many characters as necessary to be adequately descriptive (use of more than 20 characters is not out of line); be consistent in naming conventions.
+  
   - use descriptive variable names
+  
   - use both upper and lower case, avoid abbreviations, use as many characters as necessary to be adequately descriptive (use of more than 20 characters is not out of line); be consistent in naming conventions.
+  
   - function and method sizes should be minimized; less than 100 lines of code is good, less than 50 lines is preferable.
+  
   - function descriptions should be clearly spelled out in comments preceding a function's code.
+  
   - organize code for readability.
+  
   - use whitespace generously
+  
   - vertically and horizontally
+  
   - each line of code should contain 70 characters max.
+  
   - one code statement per line.
 
-- coding style should be consistent throughout a
-program (eg, use of brackets, indentations, naming conventions, etc.) - in adding comments, err on
-the side of too many rather than too few comments; a common rule of thumb is that there should be at
-least as many lines of comments (including header blocks) as lines of code.
+  - coding style should be consistent throughout a program (eg, use of brackets, indentations, naming conventions, etc.) - in adding comments, err on the side of too many rather than too few comments; a common rule of thumb is that there should be at least as many lines of comments (including header blocks) as lines of code.
+  
+  - no matter how small, an application should include documentation of the overall program function and flow (even a few paragraphs is better than nothing); or if possible a separate flow chart and detailed program documentation. 
 
-- no matter how small, an application should include documentation of the overall program function and flow (even a few paragraphs is better than nothing); or if possible a separate flow chart and detailed program documentation. 
+  - make extensive use of error handling procedures and status and error logging. 
 
-- make extensive use of error handling procedures and status and error logging. 
+  - For C++, to minimize complexity and increase maintainability, avoid too many levels of inheritance in class hierarchies (relative to the size and complexity of the application). Minimize use of multiple inheritance, and minimize use of operator overloading (note that the Java programming language eliminates multiple inheritance and operator overloading.) 
 
-- For C++, to minimize complexity and increase maintainability, avoid too many levels of inheritance in class hierarchies (relative to the size and complexity of the application). Minimize use of multiple inheritance, and minimize use of operator overloading (note that the Java programming language eliminates multiple inheritance and operator overloading.) 
+  - For C++, keep class methods small, less than 50 lines of code per method is preferable. 
 
-- For C++, keep class methods small, less
-than 50 lines of code per method is preferable. 
-
-- For C++, make liberal use of exception handlers"""},
+  - For C++, make liberal use of exception handlers"""},
 
 142: {'What is a \'good design\'?': """
 'Design' could refer to many things, but often refers to 'functional design' or 'internal design'.
@@ -940,11 +947,18 @@ question_list = QUESTION_DICT.keys()
 if not question_list:
 	sys.exit(1)
 
+# Questions that have already been learned. Exclude them.
+# This is a list of dictionary keys used for QUESTION_DICT.
+# TODO: Create exclusion list.
+exclusion_list = [16]
+for elem in exclusion_list:
+    question_list.remove(elem)
+
 # Randomize the list of questions.
 random.shuffle(question_list)
 
 # Define number of asked questions.
-q_count = 5
+q_count = 12
 try:
     ask_q_list = question_list[:q_count]
 except ValueError as e:
