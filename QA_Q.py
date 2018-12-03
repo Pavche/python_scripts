@@ -24,22 +24,16 @@ The Capability Maturity Model for Software (CMM or SW-CMM) is a model for judgin
 Beta testing is testing of a release of a software product conducted by customers."""},
 
 5: {'What is Black Box Testing?': """
-Testing based on an analysis of the specification of a piece of software without reference to its
-internal workings. The goal is to test how well the component conforms to the published requirements
-for the component."""},
+Testing based on an analysis of the specification of a piece of software without reference to its internal workings. The goal is to test how well the component conforms to the published requirements for the component."""},
 
 6: {'What is Bottom Up Testing?': """
-An approach to integration testing where the lowest level components are tested first, then used to
-facilitate the testing of higher level components. The process is repeated until the component at the
-top of the hierarchy is tested."""},
+An approach to integration testing where the lowest level components are tested first, then used to facilitate the testing of higher level components. The process is repeated until the component at the top of the hierarchy is tested."""},
 
 7: {'What is Boundary Testing?': """
 Test which focus on the boundary or limit conditions of the software being tested. (Some of these tests are stress tests)."""},
 
 8: {'What is Boundary Value Analysis?': """
-BVA is similar to Equivalence Partitioning but focuses on "corner cases" or values that are usually out
-of range as defined by the specification. This means that if a function expects all values in range of
-negative 100 to positive 1000, test inputs would include negative 101 and positive 1001."""},
+BVA is similar to Equivalence Partitioning but focuses on "corner cases" or values that are usually out of range as defined by the specification. This means that if a function expects all values in range of negative 100 to positive 1000, test inputs would include negative 101 and positive 1001."""},
 
 9: {'What is Branch Testing?': """
 Testing of all branches in the program source code is called Branch Testing."""},
@@ -80,10 +74,7 @@ order to access supporting system or network services is called Application Prog
 The use of software tools, such as automated testing tools, to improve software quality is called Automated Software Quality (ASQ)."""},
 
 21: {'What is Automated Testing?': """
-Testing employing software tools which execute tests without manual intervention is called Automated
-Testing. Can be applied in GUI, performance, API, etc. testing. The use of software to control the
-execution of tests, the comparison of actual outcomes to predicted outcomes, the setting up of test
-preconditions, and other test control and test reporting functions."""},
+Testing employing software tools which execute tests without manual intervention is called Automated Testing. Can be applied in GUI, performance, API, etc. testing. The use of software to control the execution of tests, the comparison of actual outcomes to predicted outcomes, the setting up of test preconditions, and other test control and test reporting functions."""},
 
 22: {'What is Backus-Naur Form?': """
 It is a meta-language used to formally describe the syntax of a language."""},
@@ -129,15 +120,10 @@ A graphical representation of inputs and the associated outputs effects which ca
 Phase of development where functionality is implemented entirety; bug fixes are all that are left. All functions found in the Functional Specifications have been implemented."""},
 
 34: {'What is Code Coverage?': """
-An analysis method that determines which parts of the software have been executed (covered) by the
-test case suite and which parts have not been executed and therefore may require additional
-attention."""},
+An analysis method that determines which parts of the software have been executed (covered) by the test case suite and which parts have not been executed and therefore may require additional attention."""},
 
 35: {'What is Code Inspection?': """
-A formal testing technique where the programmer reviews source code with a group who ask
-questions analyzing the program logic, analyzing the code with respect to a checklist of historically
-common programming errors, and analyzing its compliance with coding standards. Know more about
-the Inspection in software testing."""},
+A formal testing technique where the programmer reviews source code with a group who ask questions analyzing the program logic, analyzing the code with respect to a checklist of historically common programming errors, and analyzing its compliance with coding standards. Know more about the Inspection in software testing."""},
 
 36: {'What is Code Walkthrough?': """
 A formal testing technique where source code is traced by a group with a small set of test cases,
@@ -145,17 +131,13 @@ while the state of program variables is manually monitored, to analyze the progr
 assumptions."""},
 
 37: {'What is Concurrency Testing?': """
-Multi-user testing geared towards determining the effects of accessing the same application code,
-module or database records. Identifies and measures the level of locking, deadlocking and use of
-single-threaded code and locking semaphores."""},
+Multi-user testing geared towards determining the effects of accessing the same application code, module or database records. Identifies and measures the level of locking, deadlocking and use of single-threaded code and locking semaphores."""},
 
 38: {'What is Conformance Testing?': """
 Conformance testing, also known as compliance testing, is a methodology used in engineering to ensure that a product, process, computer program or system meets a defined set of standards."""},
 
 39: {'What is Context Driven Testing?': """
-The context-driven school of software testing is flavour of Agile Testing that advocates continuous
-and creative evaluation of testing opportunities in light of the potential information revealed and the
-value of that information to the organization right now."""},
+The context-driven school of software testing is flavour of Agile Testing that advocates continuous and creative evaluation of testing opportunities in light of the potential information revealed and the value of that information to the organization right now."""},
 
 40: {'What is Conversion Testing?': """
 Testing of programs or procedures used to convert data from existing systems for use in replacement systems."""},
@@ -394,7 +376,11 @@ Software have bugs because of the following reasons:
 Memory leaks means incomplete de-allocation - are bugs that happen very often. Buffer overflow means data sent as input to the server that overflows the boundaries of the input area, thus causing the server to misbehave."""},
 
 108: {'What are the major differences between stress testing, load testing, Volume testing?': """
-Stress testing means increasing the load and checking the performance at each level. Load testing means at a time giving more load by the expectation and checking the performance at that level. Volume testing means first we have to apply initial."""},
+Stress testing means increasing the load and checking the performance at each level.
+
+Load testing means at a time giving more load by the expectation and checking the performance at that level.
+
+Volume testing means first we have to apply initial."""},
 
 109: {'What is Exhaustive Testing?': """
 Testing which covers all combinations of input values and preconditions for an element of the software under test."""},
@@ -569,17 +555,11 @@ than 50 lines of code per method is preferable.
 - For C++, make liberal use of exception handlers"""},
 
 142: {'What is a \'good design\'?': """
-'Design' could refer to many things, but often refers to 'functional design' or 'internal design'. Good
-internal design is indicated by software code whose overall structure is clear, understandable, easily
-modifiable, and maintainable; is robust with sufficient error-handling and status logging capability; and
-works correctly when implemented. Good functional design is indicated by an application whose
-functionality can be traced back to customer and end-user requirements. For programs that have a
-user interface, it's often a good idea to assume that the end user will have little computer knowledge
-and may not read a user manual or even the on-line help; some common rules-of-thumb include: - the
-program should act in a way that least surprises the user - it should always be evident to the user
-what can be done next and how to exit - the program shouldn't let the users do something stupid
-without warning them. Know more about test design, test design technique, categories of test design
-technique and test design tools"""},
+'Design' could refer to many things, but often refers to 'functional design' or 'internal design'.
+
+Good internal design is indicated by software code whose overall structure is clear, understandable, easily modifiable, and maintainable; is robust with sufficient error-handling and status logging capability; and works correctly when implemented.
+
+Good functional design is indicated by an application whose functionality can be traced back to customer and end-user requirements. For programs that have a user interface, it's often a good idea to assume that the end user will have little computer knowledge and may not read a user manual or even the on-line help; some common rules-of-thumb include: - the program should act in a way that least surprises the user - it should always be evident to the user what can be done next and how to exit - the program shouldn't let the users do something stupid without warning them. Know more about test design, test design technique, categories of test design technique and test design tools"""},
 
 143: {'What makes a good test engineer?': """
 A good test engineer has a 'test to break' attitude, an ability to take the point of view of the customer,
@@ -592,12 +572,7 @@ the learning curve in automated test tool programming. Judgment skills are neede
 risk areas of an application on which to focus testing efforts when time is limited."""},
 
 144: {'What makes a good Software QA engineer?': """
-The same qualities a good tester has are useful for a QA engineer. Additionally, they must be able to
-understand the entire software development process and how it can fit into the business approach
-and goals of the organization. Communication skills and the ability to understand various sides of
-issues are important. In organizations in the early stages of implementing QA processes, patience
-and diplomacy are especially needed. An ability to find problems as well as to see 'what\'s missing' is
-important for inspections and reviews."""},
+The same qualities a good tester has are useful for a QA engineer. Additionally, they must be able to understand the entire software development process and how it can fit into the business approach and goals of the organization. Communication skills and the ability to understand various sides of issues are important. In organizations in the early stages of implementing QA processes, patience and diplomacy are especially needed. An ability to find problems as well as to see 'what\'s missing' is important for inspections and reviews."""},
 
 145: {'What makes a good QA or Test manager?': """
 A good QA, test, or QA/Test(combined) manager should:
@@ -610,36 +585,9 @@ A good QA, test, or QA/Test(combined) manager should:
   - be able to run meetings and keep them focused"""},
 
 146: {'What\'s the role of documentation in QA?': """
-The role of documentation in QA is Critical. (Note that documentation can be electronic, not
-necessarily paper.) QA practices should be documented such that they are repeatable. Specifications,
-designs, business rules, inspection reports, configurations, code changes, test plans, test cases, bug
-reports, user manuals, etc. should all be documented. There should ideally be a system for easily
-finding and obtaining documents and determining what documentation will have a particular piece of
-information. Change management for documentation should be used if possible. Know more about
-documentation testing"""},
+The role of documentation in QA is Critical. (Note that documentation can be electronic, not necessarily paper.) QA practices should be documented such that they are repeatable. Specifications, designs, business rules, inspection reports, configurations, code changes, test plans, test cases, bug reports, user manuals, etc. should all be documented. There should ideally be a system for easily finding and obtaining documents and determining what documentation will have a particular piece of information. Change management for documentation should be used if possible. Know more about documentation testing"""},
 
-147: {'What\'s the big deal about \'requirements\'?': """
-One of the most reliable methods of insuring problems, or failure, in a complex software project is to
-have poorly documented requirements specifications. Requirements are the details describing an
-application's externally-perceived functionality and properties. Requirements should be clear,
-complete, reasonably detailed, cohesive, attainable, and testable. A non-testable requirement would
-be, for example, 'user-friendly' (too subjective). A testable requirement would be something like 'the
-user must enter their previously-assigned password to access the application'. Determining and
-organizing requirements details in a useful and efficient way can be a difficult effort; different methods
-are available depending on the particular project. Many books are available that describe various
-approaches to this task. Care should be taken to involve ALL of a project's significant 'customers' in
-the requirements process. 'Customers' could be in-house personnel or out, and could include end-
-users, customer acceptance testers, customer contract officers, customer management, future
-software maintenance engineers, salespeople, etc. Anyone who could later derail the project if their
-expectations aren't met should be included if possible. Organizations vary considerably in their
-handling of requirements specifications. Ideally, the requirements are spelled out in a document with
-statements such as 'The product shall.....'. 'Design' specifications should not be confused with
-'requirements'; design specifications should be traceable back to the requirements. In some
-organizations requirements may end up in high level project plans, functional specification
-documents, in design documents, or in other documents at various levels of detail. No matter what
-they are called, some type of documentation with detailed requirements will be needed by testers in
-order to properly plan and execute tests. Without such documentation, there will be no clear-cut way
-to determine if a software application is performing correctly."""},
+147: {'What\'s the big deal about \'requirements\'?': """ One of the most reliable methods of insuring problems, or failure, in a complex software project is to have poorly documented requirements specifications. Requirements are the details describing an application's externally-perceived functionality and properties. Requirements should be clear, complete, reasonably detailed, cohesive, attainable, and testable. A non-testable requirement would be, for example, 'user-friendly' (too subjective). A testable requirement would be something like 'the user must enter their previously-assigned password to access the application'. Determining and organizing requirements details in a useful and efficient way can be a difficult effort; different methods are available depending on the particular project. Many books are available that describe various approaches to this task. Care should be taken to involve ALL of a project's significant 'customers' in the requirements process. 'Customers' could be in-house personnel or out, and could include end- users, customer acceptance testers, customer contract officers, customer management, future software maintenance engineers, salespeople, etc. Anyone who could later derail the project if their expectations aren't met should be included if possible. Organizations vary considerably in their handling of requirements specifications. Ideally, the requirements are spelled out in a document with statements such as 'The product shall.....'. 'Design' specifications should not be confused with 'requirements'; design specifications should be traceable back to the requirements. In some organizations requirements may end up in high level project plans, functional specification documents, in design documents, or in other documents at various levels of detail. No matter what they are called, some type of documentation with detailed requirements will be needed by testers in order to properly plan and execute tests. Without such documentation, there will be no clear-cut way to determine if a software application is performing correctly."""},
 
 148: {'What steps are needed to develop and run software tests?': """
 The following are some of the steps to consider: 
@@ -666,9 +614,7 @@ The following are some of the steps to consider:
 - Maintain and update test plans, test cases, test environment, and testware through life cycle"""},
 
 149: {'What is \'configuration management\'?': """
-Configuration management covers the processes used to control, coordinate, and track: code,
-requirements, documentation, problems, change requests, designs, tools/compilers/libraries/patches,
-changes made to them, and who makes the changes."""},
+Configuration management covers the processes used to control, coordinate, and track: code, requirements, documentation, problems, change requests, designs, tools/compilers/libraries/patches, changes made to them, and who makes the changes."""},
 
 150: {'What if the software is so buggy it can\'t really be tested at all?': """
 The best bet in this situation is for the testers to go through the process of reporting whatever bugs or blocking-type problems initially show up, with the focus being on critical bugs. Since this type of problem can severely affect schedules, and indicates deeper problems in the software development process (such as insufficient unit testing or insufficient integration testing, poor design, improper build or release procedures, etc.) managers should be notified, and provided with some documentation as evidence of the problem. Know more about Severity and Priority"""},
@@ -723,146 +669,82 @@ out in advance, if possible.
 
 
 154: {'What if the project isn\'t big enough to justify extensive testing?': """
-Consider the impact of project errors, not the size of the project. However, if extensive testing is still
-not justified, risk analysis is again needed and the same considerations as described previously in
-'What if there isn\'t enough time for thorough testing?' apply. The tester might then do ad hoc testing,
-or write up a limited test plan based on the risk analysis."""},
+Consider the impact of project errors, not the size of the project. However, if extensive testing is still not justified, risk analysis is again needed and the same considerations as described previously in 'What if there isn\'t enough time for thorough testing?' apply. The tester might then do ad hoc testing, or write up a limited test plan based on the risk analysis."""},
 
 155: {'What if the application has functionality that wasn\'t in the requirements?': """
-It may take serious effort to determine if an application has significant unexpected or hidden
-functionality, and it would indicate deeper problems in the software development process. If the
-functionality isn\'t necessary to the purpose of the application, it should be removed, as it may have
-unknown impacts or dependencies that were not taken into account by the designer or the customer.
-If not removed, design information will be needed to determine added testing needs or regression
-testing needs. Management should be made aware of any significant added risks as a result of the
-unexpected functionality. If the functionality only effects areas such as minor improvements in the
-user interface, for example, it may not be a significant risk."""},
+It may take serious effort to determine if an application has significant unexpected or hidden functionality, and it would indicate deeper problems in the software development process. If the functionality isn\'t necessary to the purpose of the application, it should be removed, as it may have unknown impacts or dependencies that were not taken into account by the designer or the customer. If not removed, design information will be needed to determine added testing needs or regression testing needs. Management should be made aware of any significant added risks as a result of the unexpected functionality. If the functionality only effects areas such as minor improvements in the user interface, for example, it may not be a significant risk."""},
 
 156: {'How can Software QA processes be implemented without stifling productivity?': """
-By implementing QA processes slowly over time, using consensus to reach agreement on processes,
-and adjusting and experimenting as an organization grows and matures, productivity will be improved
-instead of stifled. Problem prevention will lessen the need for problem detection, panics and burn-out
-will decrease, and there will be improved focus and less wasted effort. At the same time, attempts
-should be made to keep processes simple and efficient, minimize paperwork, promote computer-
-based processes and automated tracking and reporting, minimize time required in meetings, and
-promote training as part of the QA process. However, no one - especially talented technical types -
-likes rules or bureaucracy, and in the short run things may slow down a bit. A typical scenario would
-be that more days of planning and development will be needed, but less time will be required for late-
-night bug-fixing and calming of irate customers."""},
+By implementing QA processes slowly over time, using consensus to reach agreement on processes, and adjusting and experimenting as an organization grows and matures, productivity will be improved instead of stifled. Problem prevention will lessen the need for problem detection, panics and burn-out will decrease, and there will be improved focus and less wasted effort. At the same time, attempts should be made to keep processes simple and efficient, minimize paperwork, promote computer- based processes and automated tracking and reporting, minimize time required in meetings, and promote training as part of the QA process. However, no one - especially talented technical types - likes rules or bureaucracy, and in the short run things may slow down a bit. A typical scenario would be that more days of planning and development will be needed, but less time will be required for late- night bug-fixing and calming of irate customers."""},
 
 157: {'What if an organization is growing so fast that fixed QA processes are impossible?': """
-This is a common problem in the software industry, especially in new technology areas. There is no
-easy solution in this situation, other than: - Hire good people - Management should 'ruthlessly
-prioritize' quality issues and maintain focus on the customer - Everyone in the organization should be
-clear on what 'quality' means to the customer"""},
+This is a common problem in the software industry, especially in new technology areas. There is no easy solution in this situation, other than:
+  - Hire good people
+  - Management should 'ruthlessly prioritize' quality issues and maintain focus on the customer
+  - Everyone in the organization should be clear on what 'quality' means to the customer"""},
 
 158: {'How does a client/server environment affect testing?': """
-Client/server applications can be quite complex due to the multiple dependencies among clients, data
-communications, hardware, and servers. Thus testing requirements can be extensive. When time is
-limited (as it usually is) the focus should be on integration and system testing. Additionally,
-load/stress/performance testing may be useful in determining client/server application limitations and
-capabilities. There are commercial tools to assist with such testing.
-Take your testing career to the next level, get ISTQB certified – http://istqbexamcertification.com
-202 Software Testing Interview Questions and Answers"""},
+Client/server applications can be quite complex due to the multiple dependencies among clients, data communications, hardware, and servers. Thus testing requirements can be extensive. When time is
+limited (as it usually is) the focus should be on integration and system testing. Additionally, load/stress/performance testing may be useful in determining client/server application limitations and
+capabilities. There are commercial tools to assist with such testing."""},
 
 159: {'How can World Wide Web sites be tested?': """
-Web sites are essentially client/server applications - with web servers and 'browser' clients.
-Consideration should be given to the interactions between html pages, TCP/IP communications,
-Internet connections, firewalls, applications that run in web pages (such as applets, javascript, plug-in
-applications), and applications that run on the server side (such as cgi scripts, database interfaces,
-logging applications, dynamic page generators, asp, etc.). Additionally, there are a wide variety of
-servers and browsers, various versions of each, small but sometimes significant differences between
-them, variations in connection speeds, rapidly changing technologies, and multiple standards and
-protocols. The end result is that testing for web sites can become a major ongoing effort. Other
-considerations might include:
-  - What are the expected loads on the server (e.g., number of hits per
-unit time?), and what kind of performance is required under such loads (such as web server response
-time, database query response times). What kinds of tools will be needed for performance testing
-(such as web testing tools, other tools already in house that can be adapted, web robot downloading
-tools, etc.)?
-  - Who is the target audience? What kind of browsers will they be using? What kind of
-connection speed will they by using? Are they intra- organization (thus with likely high connection
-speeds and similar browsers) or Internet-wide (thus with a wide variety of connection speeds and
-browser types)?
-  - What kind of performance is expected on the client side (e.g., how fast should
-pages appear, how fast should animations, applets, etc. load and run)?
-  - Will down time for server
-and content maintenance/upgrades be allowed? How much?
-  - What kinds of security (firewalls,
-encryptions, passwords, etc.) will be required and what is it expected to do? How can it be tested? -
-How reliable are the site's Internet connections required to be? And how does that affect backup
-system or redundant connection requirements and testing?
-  - What processes will be required to
-manage updates to the web site's content, and what are the requirements for maintaining, tracking,
-and controlling page content, graphics, links, etc.?
+Web sites are essentially client/server applications - with web servers and 'browser' clients. Consideration should be given to the interactions between html pages, TCP/IP communications, Internet connections, firewalls, applications that run in web pages (such as applets, javascript, plug-in applications), and applications that run on the server side (such as cgi scripts, database interfaces, logging applications, dynamic page generators, asp, etc.). Additionally, there are a wide variety of servers and browsers, various versions of each, small but sometimes significant differences between them, variations in connection speeds, rapidly changing technologies, and multiple standards and protocols. The end result is that testing for web sites can become a major ongoing effort. Other considerations might include:
+  - What are the expected loads on the server (e.g., number of hits per unit time?), and what kind of performance is required under such loads (such as web server response time, database query response times). What kinds of tools will be needed for performance testing (such as web testing tools, other tools already in house that can be adapted, web robot downloading tools, etc.)?
+  
+  - Who is the target audience? What kind of browsers will they be using? What kind of connection speed will they by using? Are they intra- organization (thus with likely high connection speeds and similar browsers) or Internet-wide (thus with a wide variety of connection speeds and browser types)?
+  
+  - What kind of performance is expected on the client side (e.g., how fast should pages appear, how fast should animations, applets, etc. load and run)?
+  - Will down time for server and content maintenance/upgrades be allowed? How much?
+  - What kinds of security (firewalls, encryptions, passwords, etc.) will be required and what is it expected to do? How can it be tested?
+  
+  - How reliable are the site's Internet connections required to be? And how does that affect backup system or redundant connection requirements and testing?
+  
+  - What processes will be required to manage updates to the web site's content, and what are the requirements for maintaining, tracking, and controlling page content, graphics, links, etc.?
+  
   - Which HTML specification will be adhered to? How strictly? What variations will be allowed for targeted browsers?
+  
   - Will there be any standards or requirements for page appearance and/or graphics throughout a site or parts of a site??
+  
   - How will internal and external links be validated and updated? how often?
-  - Can testing be done on the production system, or will a separate test system be required? How are browser caching, variations in
-browser option settings, dial-up connection variability, and real-world internet 'traffic congestion'
-problems to be accounted for in testing?- How extensive or customized are the server logging and
-reporting requirements; are they considered an integral part of the system and do they require
-testing?
+  
+  - Can testing be done on the production system, or will a separate test system be required? How are browser caching, variations in browser option settings, dial-up connection variability, and real-world internet 'traffic congestion' problems to be accounted for in testing?
+  
+  - How extensive or customized are the server logging and reporting requirements; are they considered an integral part of the system and do they require testing?
+
   - How are cgi programs, applets, java scripts, ActiveX components, etc. to be maintained, tracked, controlled, and tested?
+  
   - Pages should be 3-5 screens max unless content is tightly focused on a single topic. If larger, provide internal links within the page.
 
-- The page layouts and design elements should be consistent throughout a site, so that it's clear to the user that they're still within a site.
+  - The page layouts and design elements should be consistent throughout a site, so that it's clear to the user that they're still within a site.
+  
   - Pages should be as browser-independent as possible, or pages should be provided or generated based on the browser-type.
+  
   - All pages should have links external to the page; there should be no dead-end pages.
+  
   - The page owner, revision date, and a link to a contact person or organization should be included on each page."""},
 
 160: {'How is testing affected by object-oriented designs?': """
-Well-engineered object-oriented design can make it easier to trace from code to internal design to
-functional design to requirements. While there will be little affect on black box testing (where an
-understanding of the internal design of the application is unnecessary), white-box testing can be
-oriented to the application's objects. If the application was well-designed this can simplify test design."""},
+Well-engineered object-oriented design can make it easier to trace from code to internal design to functional design to requirements. While there will be little affect on black box testing (where an understanding of the internal design of the application is unnecessary), white-box testing can be oriented to the application's objects. If the application was well-designed this can simplify test design."""},
 
 161: {'What is Extreme Programming and what\'s it got to do with testing?': """
-Extreme Programming (XP) is a software development approach for small teams on risk-prone
-projects with unstable requirements. It was created by Kent Beck who described the approach in his
-book 'Extreme Programming Explained'. Testing ('extreme testing') is a core aspect of Extreme
-Programming. Programmers are expected to write unit and functional test code first - before the
-application is developed. Test code is under source control along with the rest of the code. Customers
-are expected to be an integral part of the project team and to help develop scenarios for
-acceptance/black box testing. Acceptance tests are preferably automated, and are modified and rerun
-for each of the frequent development iterations. QA and test personnel are also required to be an
-integral part of the project team. Detailed requirements documentation is not used, and frequent re-
-scheduling, re-estimating, and re-prioritizing is expected."""},
+Extreme Programming (XP) is a software development approach for small teams on risk-prone projects with unstable requirements. It was created by Kent Beck who described the approach in his book 'Extreme Programming Explained'. Testing ('extreme testing') is a core aspect of Extreme Programming. Programmers are expected to write unit and functional test code first - before the application is developed. Test code is under source control along with the rest of the code. Customers are expected to be an integral part of the project team and to help develop scenarios for acceptance/black box testing. Acceptance tests are preferably automated, and are modified and rerun for each of the frequent development iterations. QA and test personnel are also required to be an integral part of the project team. Detailed requirements documentation is not used, and frequent rescheduling, re-estimating, and re-prioritizing is expected."""}, 
 
 162: {'Will automated testing tools make testing easier?': """
-- Possibly. For small projects, the time needed to learn and implement them may not be worth it. For
-larger projects, or on-going long-term projects they can be valuable.
+- Possibly. For small projects, the time needed to learn and implement them may not be worth it. For larger projects, or on-going long-term projects they can be valuable.
 
-- A common type of automated
-tool is the 'record/playback' type. For example, a tester could click through all combinations of menu
-choices, dialog box choices, buttons, etc. in an application GUI and have them 'recorded' and the
-results logged by a tool. The 'recording' is typically in the form of text based on a scripting language
-that is interpretable by the testing tool. If new buttons are added, or some underlying code in the
-application is changed, etc. the application can then be retested by just 'playing back' the 'recorded'
-actions, and comparing the logging results to check effects of the changes. The problem with such
-tools is that if there are continual changes to the system being tested, the 'recordings' may have to be
-changed so much that it becomes very time-consuming to continuously update the scripts.
-Additionally, interpretation of results (screens, data, logs, etc.) can be a difficult task. Note that there
-are record/playback tools for text-based interfaces also, and for all types of platforms.
+- A common type of automated tool is the 'record/playback' type. For example, a tester could click through all combinations of menu choices, dialog box choices, buttons, etc. in an application GUI and have them 'recorded' and the results logged by a tool. The 'recording' is typically in the form of text based on a scripting language that is interpretable by the testing tool. If new buttons are added, or some underlying code in the application is changed, etc. the application can then be retested by just 'playing back' the 'recorded' actions, and comparing the logging results to check effects of the changes. The problem with such tools is that if there are continual changes to the system being tested, the 'recordings' may have to be changed so much that it becomes very time-consuming to continuously update the scripts. Additionally, interpretation of results (screens, data, logs, etc.) can be a difficult task. Note that there are record/playback tools for text-based interfaces also, and for all types of platforms.
 
 - Other automated tools can include:
   1) code analyzers - monitor code complexity, adherence to standards, etc.
-  2) coverage analyzers - these tools check which parts of the code have been exercised by a test, and
-may be oriented to code statement coverage, condition coverage, path coverage, etc. memory
-analyzers - such as bounds-checkers and leak detectors. load/performance test tools - for testing
-client/server and web applications under various load levels. web test tools - to check that links are
-valid, HTML code usage is correct, client-side and server-side programs work, a web site's
-interactions are secure. other tools - for test case management, documentation management, bug
-reporting, and configuration management."""},
-
+  2) coverage analyzers - these tools check which parts of the code have been exercised by a test, and may be oriented to code statement coverage, condition coverage, path coverage, etc. memory analyzers - such as bounds-checkers and leak detectors. load/performance test tools - for testing client/server and web applications under various load levels. web test tools - to check that links are valid, HTML code usage is correct, client-side and server-side programs work, a web site's interactions are secure. other tools - for test case management, documentation management, bug reporting, and configuration management."""},
 
 163: {'What\'s the difference between black box and white box testing?': """
-  1) Black-box and white-box are test design methods. Black-box test design treats the system as a “black-box”, so it doesn't explicitly use knowledge of the internal structure. Black-box test design is usually described as focusing on testing functional requirements. 
-  
-  Synonyms for black-box include: behavioural, functional, opaque-box, and closed-box. 
+1) Black-box and white-box are test design methods. Black-box test design treats the system as a “black-box”, so it doesn't explicitly use knowledge of the internal structure. Black-box test design is usually described as focusing on testing functional requirements. 
 
-  2) White-box test design allows one to peek inside the “box”, and it focuses specifically on using internal knowledge of the software to guide the selection of test data. Synonyms for white-box include: structural, glass-box and clear-box. While black-box and white-box are terms that are still in popular use, many people prefer the terms 'behavioural' and 'structural'. Behavioural test design is slightly different from black-box test design because the use of internal knowledge isn\'t strictly forbidden, but it's still discouraged. In practice, it hasn't proven useful to use a single test design method. One has to use a mixture of different methods so that they aren't hindered by the limitations of a particular one. Some call this 'gray-box' or 'translucent-box' test design, but others wish we'd stop talking about boxes altogether. It is important to understand that these methods are used during the test design phase, and their influence is hard to see in the tests once they're implemented. Note that any level of testing (unit testing, system testing, etc.) can use any test design methods. Unit testing is usually associated with structural test design, but this is because testers usually don't have well-defined requirements at the unit level to validate."""},
+Synonyms for black-box include: behavioural, functional, opaque-box, and closed-box. 
 
+2) White-box test design allows one to peek inside the “box”, and it focuses specifically on using internal knowledge of the software to guide the selection of test data. Synonyms for white-box include: structural, glass-box and clear-box. While black-box and white-box are terms that are still in popular use, many people prefer the terms 'behavioural' and 'structural'. Behavioural test design is slightly different from black-box test design because the use of internal knowledge isn\'t strictly forbidden, but it's still discouraged. In practice, it hasn't proven useful to use a single test design method. One has to use a mixture of different methods so that they aren't hindered by the limitations of a particular one. Some call this 'gray-box' or 'translucent-box' test design, but others wish we'd stop talking about boxes altogether. It is important to understand that these methods are used during the test design phase, and their influence is hard to see in the tests once they're implemented. Note that any level of testing (unit testing, system testing, etc.) can use any test design methods. Unit testing is usually associated with structural test design, but this is because testers usually don't have well-defined requirements at the unit level to validate."""},
 
 164: {'What kinds of testing should be considered?': """
 Below are the kinds of testing which should be considered:
@@ -904,22 +786,20 @@ Solving problems is a high-visibility process; preventing problems is low-visibi
 In ancient China there was a family of healers, one of whom was known throughoutthe land and employed as a physician to a great lord. The physician was asked which of his familywas the most skillful healer. He replied, "I tend to the sick and dying with drastic and dramatictreatments, and on occasion someone is cured and my name gets out among the lords.""My elderbrother cures sickness when it just begins to take root, and his skills are known among the localpeasants and neighbours." "My eldest brother is able to sense the spirit of sickness and eradicate itbefore it takes form. His name is unknown outside our home.\""""},
 
 166: {'Why does software have bugs?': """
-  1) Miscommunication or no communication - as to specifics of what an application should or shouldn't do (the application's requirements).
+1) Miscommunication or no communication - as to specifics of what an application should or shouldn't do (the application's requirements).
+
+2) Software complexity - the complexity of current software applications can be difficult to comprehend for anyone without experience in modern-day software development. Multi-tiered applications, client-server and distributed applications, datacommunications, enormous relational databases, and sheer size of applications have all contributedto the exponential growth in software/system complexity. programming errors - programmers, likeanyone else, can make mistakes.
   
-  2) Software complexity - the complexity of current software applications can be difficult to comprehend for anyone without experience in modern-day software development. Multi-tiered applications, client-server and distributed applications, datacommunications, enormous relational databases, and sheer size of applications have all contributedto the exponential growth in software/system complexity. programming errors - programmers, likeanyone else, can make mistakes.
+3) Changing requirements (whether documented or undocumented) - the end-user may not understand the effects of changes, or may understand and request themanyway - redesign, rescheduling of engineers, effects on other projects, work already completed thatmay have to be redone or thrown out, hardware requirements that may be affected, etc. If there aremany minor changes or any major changes, known and unknown dependencies among parts of theproject are likely to interact and cause problems, and the complexity of coordinating changes mayresult in errors. Enthusiasm of engineering staff may be affected. In some fast-changing businessenvironments, continuously modified requirements may be a fact of life. In this case, managementmust understand the resulting risks, and QA and test engineers must adapt and plan for continuousextensive testing to keep the inevitable bugs from running out of control.
+
+4) Poorly documented code - it's tough to maintain and modify code that is badly written or poorly documented; the result is bugs. Inmany organizations management provides no incentive for programmers to document their code orwrite clear, understandable, maintainable code. In fact, it's usually the opposite: they get points mostlyfor quickly turning out code, and there's job security if nobody else can understand it ('if it was hard towrite, it should be hard to read').
   
-  3) Changing requirements (whether documented or undocumented) - the end-user may not understand the effects of changes, or may understand and request themanyway - redesign, rescheduling of engineers, effects on other projects, work already completed thatmay have to be redone or thrown out, hardware requirements that may be affected, etc. If there aremany minor changes or any major changes, known and unknown dependencies among parts of theproject are likely to interact and cause problems, and the complexity of coordinating changes mayresult in errors. Enthusiasm of engineering staff may be affected. In some fast-changing businessenvironments, continuously modified requirements may be a fact of life. In this case, managementmust understand the resulting risks, and QA and test engineers must adapt and plan for continuousextensive testing to keep the inevitable bugs from running out of control.
-  
-  4) Poorly documented code - it's tough to maintain and modify code that is badly written or poorly documented; the result is bugs. Inmany organizations management provides no incentive for programmers to document their code orwrite clear, understandable, maintainable code. In fact, it's usually the opposite: they get points mostlyfor quickly turning out code, and there's job security if nobody else can understand it ('if it was hard towrite, it should be hard to read').
-  
-  5) software development tools - visual tools, class libraries,compilers, scripting tools, etc. often introduce their own bugs or are poorly documented, resulting inadded bugs. Also know about from where do defects and failures in software testing arise?"""},
+5) software development tools - visual tools, class libraries,compilers, scripting tools, etc. often introduce their own bugs or are poorly documented, resulting inadded bugs. Also know about from where do defects and failures in software testing arise?"""},
 
 
 167: {'How can new Software QA processes be introduced in an existing organization?': """
 A lot depends on the size of the organization and the risks involved. For large organizations with high- risk (in terms of lives or property) projects, serious management buy-in is required and a formalized QA process is necessary. Where the risk is lower, management and organizational buy-in and QA implementation may be a slower, step-at-a-time process. QA processes should be balanced with productivity so as to keep bureaucracy from getting out of hand. For small groups or projects, a more ad-hoc process may be appropriate, depending on the type of customers and projects. A lot will depend on team leads or managers, feedback to developers, and ensuring adequate communications among customers, managers, developers, and testers. The most value for effort will often be in
-  (a) requirements management processes, with a goal of clear, complete, testable requirement
-specifications embodied in requirements or design documentation, or in 'agile'-type environments
-extensive continuous coordination with end-users, 
+  (a) requirements management processes, with a goal of clear, complete, testable requirement specifications embodied in requirements or design documentation, or in 'agile'-type environments extensive continuous coordination with end-users, 
   (b) design inspections and code inspections, and
   (c) post-mortems/retrospectives."""},
 
@@ -989,7 +869,7 @@ Yes, automating a test makes the test process:
   - Comprehensive"""},
 
 175: {'What are the main attributes of test automation?': """
-software test automation attributes :
+Software test automation attributes :
   - Maintainability - the effort needed to update the test automation suites for each new release 
   - Reliability - the accuracy and repeatability of the test automation
   - Flexibility - the ease of working with all the different kinds of automation test ware
@@ -1070,7 +950,7 @@ Hard-to-create environments like “out of memory”, “invalid input/reply”,
 Maintainability, Reliability, Flexibility, Efficiency, Portability, Robustness, and Usability - these are the main attributes in test automation."""},
 
 192: {'What testing activities you may want to automate in a project?': """
-Testing tools can be used for : Sanity tests(which is repeated on every build), stress/Load tests(U simulate a large no of users, which is manually impossible) & Regression tests(which are done after every code change)"""},
+Testing tools can be used for:  sanity tests(which is repeated on every build) stress/load tests(U simulate a large no of users, which is manually impossible) & Regression tests(which are done after every code change)"""},
 
 193: {'How to find that tools work well with your existing system?': """
 To find this, select the suite of tests which are most important for your application. First run them with automated tool. Next subject the same tests to careful manual testing. If the results are coinciding you can say your testing tool has been performing."""},
@@ -1096,7 +976,7 @@ selected in "Add in Manager". Using WR we cannot test XML objects."""},
 Font issues, alignment issues"""},
 
 200: {'How exactly the testing the application compatibility on different browsers and on different operating systems is done?': """
-Compatibility testing is a type of software testing used to ensure compatibility of the system/application/website built with various other objects such as other web browsers, hardware platforms, users"""},
+Compatibility testing is a type of software testing used to ensure compatibility of the system/application/website built with various other objects such as other web browsers, hardware platforms, users."""},
 
 201: {'How testing is proceeded when SRS or any other document is not given?': """
 If SRS is not there we can perform Exploratory testing. In Exploratory testing the basic module is executed and depending on its results, the next plan is executed."""},
