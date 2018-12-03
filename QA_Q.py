@@ -66,9 +66,7 @@ Testing practice for projects using agile methodologies, treating development as
 A specification defining requirements for portability of applications in binary forms across different system platforms and environments is called Application Binary Interface (ABI)."""},
 
 19: {'What is Application Programming Interface (API)?': """
-A formalized set of software calls and routines that can be referenced by an application program in
-order to access supporting system or network services is called Application Programming Interface
-(API)."""},
+A formalized set of software calls and routines that can be referenced by an application program in order to access supporting system or network services is called Application Programming Interface (API)."""},
 
 20: {'What is Automated Software Quality (ASQ)?': """
 The use of software tools, such as automated testing tools, to improve software quality is called Automated Software Quality (ASQ)."""},
@@ -126,9 +124,7 @@ An analysis method that determines which parts of the software have been execute
 A formal testing technique where the programmer reviews source code with a group who ask questions analyzing the program logic, analyzing the code with respect to a checklist of historically common programming errors, and analyzing its compliance with coding standards. Know more about the Inspection in software testing."""},
 
 36: {'What is Code Walkthrough?': """
-A formal testing technique where source code is traced by a group with a small set of test cases,
-while the state of program variables is manually monitored, to analyze the programmer's logic and
-assumptions."""},
+A formal testing technique where source code is traced by a group with a small set of test cases, while the state of program variables is manually monitored, to analyze the programmer's logic and assumptions."""},
 
 37: {'What is Concurrency Testing?': """
 Multi-user testing geared towards determining the effects of accessing the same application code, module or database records. Identifies and measures the level of locking, deadlocking and use of single-threaded code and locking semaphores."""},
@@ -161,9 +157,7 @@ The process of finding and removing the causes of software failures is called De
 When actual result deviates from the expected result while testing a software application or product then it results into a defect."""},
 
 47: {'What is Dependency Testing?': """
-Dependency Testing, a testing technique in which an application's requirements are pre-examined
-for an existing software, initial states in order to test the proper functionality. The impacted areas of
-the application are also tested when testing the new features or existing features."""},
+Dependency Testing, a testing technique in which an application's requirements are pre-examined for an existing software, initial states in order to test the proper functionality. The impacted areas of the application are also tested when testing the new features or existing features."""},
 
 48: {'What is Depth Testing?': """
 A test that exercises a feature of a product in full detail is called Depth testing."""},
@@ -178,9 +172,7 @@ A device, computer program, or system that accepts the same inputs and produces 
 Checks for memory leaks or other problems that may occur with prolonged execution."""},
 
 52: {'What is End-to-End testing?': """
-Testing a complete application environment in a situation that mimics real-world use, such as
-interacting with a database, using network communications, or interacting with other hardware,
-applications, or systems if appropriate is called End-to-End testing."""},
+Testing a complete application environment in a situation that mimics real-world use, such as interacting with a database, using network communications, or interacting with other hardware, applications, or systems if appropriate is called End-to-End testing."""},
 
 53: {'What is Equivalence Class?': """
 A portion of a component's input or output domains for which the component's behaviour is assumed to be the same from the component's specification."""},
@@ -198,10 +190,7 @@ A technique used during planning, analysis and design; creates a functional hier
 A document that describes in detail the characteristics of the product with regard to its intended features is called Functional Specification."""},
 
 58: {'What is Functional Testing?': """
-Testing the features and operational behaviour of a product to ensure they correspond to its
-specifications. Testing that ignores the internal mechanism of a system or component and focuses
-solely on the outputs generated in response to selected inputs and execution conditions. or Black Box
-Testing."""},
+Testing the features and operational behaviour of a product to ensure they correspond to its specifications. Testing that ignores the internal mechanism of a system or component and focuses solely on the outputs generated in response to selected inputs and execution conditions. or Black Box Testing."""},
 
 59: {'What is Glass Box Testing?': """
 White Box Testing is also known as Glass Box testing."""},
@@ -219,24 +208,16 @@ Black-box tests conducted once the software has been integrated."""},
 A group of people whose primary responsibility is software testing. Know more about Independent testing"""},
 
 64: {'What is Inspection?': """
-A group review quality improvement process for written material. It consists of two aspects; product
-(document itself) improvement and process improvement (of both document production and
-inspection)."""},
+A group review quality improvement process for written material. It consists of two aspects; product (document itself) improvement and process improvement (of both document production and inspection)."""},
 
 65: {'What is Integration Testing?': """
-After integrating two different components together we do the integration testing. Integration testing is
-usually performed after unit and functional testing. This type of testing is especially relevant to
-client/server and distributed systems."""},
+After integrating two different components together we do the integration testing. Integration testing is usually performed after unit and functional testing. This type of testing is especially relevant to client/server and distributed systems."""},
 
 66: {'What is Installation Testing?': """
-Installation testing is a kind of quality assurance work in the software industry that focuses on what
-customers will need to do to install and set up the new software successfully. The testing process
-may involve full, partial or upgrades install/uninstall processes."""},
+Installation testing is a kind of quality assurance work in the software industry that focuses on what customers will need to do to install and set up the new software successfully. The testing process may involve full, partial or upgrades install/uninstall processes."""},
 
 67: {'What is Load Testing?': """
-A load testing is a type of software testing which is conducted to understand the behaviour of the
-application under a specific expected load.
-Also see Performance Testing."""},
+A load testing is a type of software testing which is conducted to understand the behaviour of the application under a specific expected load. Also see Performance Testing."""},
 
 68: {'What is Localization Testing?': """
 This term refers to making software specifically designed for a specific locality."""},
@@ -245,9 +226,7 @@ This term refers to making software specifically designed for a specific localit
 A white box testing technique that exercises program loops in order to validate them."""},
 
 70: {'What is Metric?': """
-Metric is a standard of measurement. Software metrics are the statistics describing the structure or
-content of a program. A metric should be a real objective measurement of something such as number
-of bugs per lines of code."""},
+Metric is a standard of measurement. Software metrics are the statistics describing the structure or content of a program. A metric should be a real objective measurement of something such as number of bugs per lines of code."""},
 
 71: {'What is Monkey Testing?': """
 Testing a system or an Application on the fly, i.e just few tests here and there to ensure the system or an application does not crash out."""},
@@ -268,9 +247,7 @@ Testing aimed at showing software works. This is also known as "test to pass".""
 All those planned or systematic actions necessary to provide adequate confidence that a product or service is of the type and quality needed and expected by the customer."""},
 
 77: {'What is Quality Audit?': """
-A systematic and independent examination to determine whether quality activities and related results
-comply with planned arrangements and whether these arrangements are implemented effectively and
-are suitable to achieve objectives."""},
+A systematic and independent examination to determine whether quality activities and related results comply with planned arrangements and whether these arrangements are implemented effectively and are suitable to achieve objectives."""},
 
 78: {'What is Quality Circle?': """
 A group of individuals with related interests that meet at regular intervals to consider problems or other matters related to the quality of outputs of a process and to the correction of problems or to the improvement of quality."""},
@@ -410,9 +387,7 @@ Test-first design is one of the mandatory practices of Extreme Programming (XP).
 A program or test tool used to execute tests. Also known as a Test Driver."""},
 
 118: {'What is Test Plan?': """
-A document describing the scope, approach, resources, and schedule of intended testing activities. It
-identifies test items, the features to be tested, the testing tasks, who will do each task, and any risks
-requiring contingency planning."""},
+A document describing the scope, approach, resources, and schedule of intended testing activities. It identifies test items, the features to be tested, the testing tasks, who will do each task, and any risks requiring contingency planning."""},
 
 119: {'What is Test Procedure?': """
 A document providing detailed instructions for the execution of one or more test cases is called test Procedure."""},
@@ -424,10 +399,7 @@ Test script is commonly used to refer to the instructions for a particular test 
 Test specification is a document specifying the test approach for a software feature or combination or features and the inputs, predicted results and execution conditions for the associated tests."""},
 
 122: {'What is Test Suite?': """
-A collection of tests used to validate the behaviour of a product. The scope of a Test Suite varies from
-organization to organization. There may be several Test Suites for a particular product for example. In
-most cases however a Test Suite is a high level concept, grouping together hundreds or thousands of
-tests related by what they are intended to test."""},
+A collection of tests used to validate the behaviour of a product. The scope of a Test Suite varies from organization to organization. There may be several Test Suites for a particular product for example. In most cases however a Test Suite is a high level concept, grouping together hundreds or thousands of tests related by what they are intended to test."""},
 
 123: {'What is Test Tool?': """
 Computer programs used for the testing of a system, a component of the system, or its documentation is called a test tool."""},
@@ -509,34 +481,19 @@ The 5 common solutions to software development problems as given below:
   5) communication - require walkthroughs and inspections when appropriate; make extensive use of group communication tools - e-mail, groupware, networked bug-tracking tools and change management tools, intranet capabilities, etc.; insure that documentation is available and up-to-date - preferably electronic, not paper; promote teamwork and cooperation; use prototypes early on so that customers' expectations are clarified."""},
 
 141: {'What is a \'good code\'?': """
-'Good code' is a code that works, is bug free, and is readable and maintainable. Some organizations
-have coding 'standards' that all developers are supposed to adhere to, but everyone has different
-ideas about what\'s best, or what is too many or too few rules. There are also various theories and
-metrics, such as McCabe Complexity metrics. It should be kept in mind that excessive use of
-standards and rules can stifle productivity and creativity. 'Peer reviews', 'buddy checks' code analysis
-tools, etc. can be used to check for problems and enforce standards. For C and C++ coding, here are
-some typical ideas to consider in setting rules/standards; these may or may not apply to a particular
-situation: - minimize or eliminate use of global variables.
-
-- use descriptive function and method names
-- use both upper and lower case, avoid abbreviations, use as many characters as necessary to be
-adequately descriptive (use of more than 20 characters is not out of line); be consistent in naming
-conventions.
-
-- use descriptive variable names - use both upper and lower case, avoid abbreviations,
-use as many characters as necessary to be adequately descriptive (use of more than 20 characters is
-not out of line); be consistent in naming conventions.
-
-- function and method sizes should be
-minimized; less than 100 lines of code is good, less than 50 lines is preferable.
-
-- function descriptions
-should be clearly spelled out in comments preceding a function's code.
-
-- organize code for readability.
-- use whitespace generously - vertically and horizontally - each line of code should contain 70
-characters max.
-- one code statement per line.
+'Good code' is a code that works, is bug free, and is readable and maintainable. Some organizations have coding 'standards' that all developers are supposed to adhere to, but everyone has different ideas about what\'s best, or what is too many or too few rules. There are also various theories and metrics, such as McCabe Complexity metrics. It should be kept in mind that excessive use of standards and rules can stifle productivity and creativity. 'Peer reviews', 'buddy checks' code analysis tools, etc. can be used to check for problems and enforce standards. For C and C++ coding, here are some typical ideas to consider in setting rules/standards; these may or may not apply to a particular situation:
+  - minimize or eliminate use of global variables.
+  - use descriptive function and method names
+  - use both upper and lower case, avoid abbreviations, use as many characters as necessary to be adequately descriptive (use of more than 20 characters is not out of line); be consistent in naming conventions.
+  - use descriptive variable names
+  - use both upper and lower case, avoid abbreviations, use as many characters as necessary to be adequately descriptive (use of more than 20 characters is not out of line); be consistent in naming conventions.
+  - function and method sizes should be minimized; less than 100 lines of code is good, less than 50 lines is preferable.
+  - function descriptions should be clearly spelled out in comments preceding a function's code.
+  - organize code for readability.
+  - use whitespace generously
+  - vertically and horizontally
+  - each line of code should contain 70 characters max.
+  - one code statement per line.
 
 - coding style should be consistent throughout a
 program (eg, use of brackets, indentations, naming conventions, etc.) - in adding comments, err on
@@ -562,14 +519,7 @@ Good internal design is indicated by software code whose overall structure is cl
 Good functional design is indicated by an application whose functionality can be traced back to customer and end-user requirements. For programs that have a user interface, it's often a good idea to assume that the end user will have little computer knowledge and may not read a user manual or even the on-line help; some common rules-of-thumb include: - the program should act in a way that least surprises the user - it should always be evident to the user what can be done next and how to exit - the program shouldn't let the users do something stupid without warning them. Know more about test design, test design technique, categories of test design technique and test design tools"""},
 
 143: {'What makes a good test engineer?': """
-A good test engineer has a 'test to break' attitude, an ability to take the point of view of the customer,
-a strong desire for quality, and an attention to detail. Tact and diplomacy are useful in maintaining a
-cooperative relationship with developers, and an ability to communicate with both technical
-(developers) and non-technical (customers, management) people is useful. Previous software
-development experience can be helpful as it provides a deeper understanding of the software
-development process, gives the tester an appreciation for the developers' point of view, and reduce
-the learning curve in automated test tool programming. Judgment skills are needed to assess high-
-risk areas of an application on which to focus testing efforts when time is limited."""},
+A good test engineer has a 'test to break' attitude, an ability to take the point of view of the customer, a strong desire for quality, and an attention to detail. Tact and diplomacy are useful in maintaining a cooperative relationship with developers, and an ability to communicate with both technical (developers) and non-technical (customers, management) people is useful. Previous software development experience can be helpful as it provides a deeper understanding of the software development process, gives the tester an appreciation for the developers' point of view, and reduce the learning curve in automated test tool programming. Judgment skills are needed to assess high- risk areas of an application on which to focus testing efforts when time is limited."""},
 
 144: {'What makes a good Software QA engineer?': """
 The same qualities a good tester has are useful for a QA engineer. Additionally, they must be able to understand the entire software development process and how it can fit into the business approach and goals of the organization. Communication skills and the ability to understand various sides of issues are important. In organizations in the early stages of implementing QA processes, patience and diplomacy are especially needed. An ability to find problems as well as to see 'what\'s missing' is important for inspections and reviews."""},
@@ -684,9 +634,7 @@ This is a common problem in the software industry, especially in new technology 
   - Everyone in the organization should be clear on what 'quality' means to the customer"""},
 
 158: {'How does a client/server environment affect testing?': """
-Client/server applications can be quite complex due to the multiple dependencies among clients, data communications, hardware, and servers. Thus testing requirements can be extensive. When time is
-limited (as it usually is) the focus should be on integration and system testing. Additionally, load/stress/performance testing may be useful in determining client/server application limitations and
-capabilities. There are commercial tools to assist with such testing."""},
+Client/server applications can be quite complex due to the multiple dependencies among clients, data communications, hardware, and servers. Thus testing requirements can be extensive. When time is limited (as it usually is) the focus should be on integration and system testing. Additionally, load/stress/performance testing may be useful in determining client/server application limitations and capabilities. There are commercial tools to assist with such testing."""},
 
 159: {'How can World Wide Web sites be tested?': """
 Web sites are essentially client/server applications - with web servers and 'browser' clients. Consideration should be given to the interactions between html pages, TCP/IP communications, Internet connections, firewalls, applications that run in web pages (such as applets, javascript, plug-in applications), and applications that run on the server side (such as cgi scripts, database interfaces, logging applications, dynamic page generators, asp, etc.). Additionally, there are a wide variety of servers and browsers, various versions of each, small but sometimes significant differences between them, variations in connection speeds, rapidly changing technologies, and multiple standards and protocols. The end result is that testing for web sites can become a major ongoing effort. Other considerations might include:
@@ -695,7 +643,9 @@ Web sites are essentially client/server applications - with web servers and 'bro
   - Who is the target audience? What kind of browsers will they be using? What kind of connection speed will they by using? Are they intra- organization (thus with likely high connection speeds and similar browsers) or Internet-wide (thus with a wide variety of connection speeds and browser types)?
   
   - What kind of performance is expected on the client side (e.g., how fast should pages appear, how fast should animations, applets, etc. load and run)?
+  
   - Will down time for server and content maintenance/upgrades be allowed? How much?
+  
   - What kinds of security (firewalls, encryptions, passwords, etc.) will be required and what is it expected to do? How can it be tested?
   
   - How reliable are the site's Internet connections required to be? And how does that affect backup system or redundant connection requirements and testing?
@@ -968,9 +918,7 @@ No. The Testing Tools will be in the ambiguity to determine which browser is ope
 Configuration management is a process to control and document any changes made during the life of a project. Revision control, Change Control, and Release Control are important aspects of Configuration Management."""},
 
 198: {'How to test the Web applications?': """
-The basic difference in web testing is here we have to test for URL's coverage and links coverage.
-Using Win Runner we can conduct web testing. But we have to make sure that Web test option is
-selected in "Add in Manager". Using WR we cannot test XML objects."""},
+The basic difference in web testing is here we have to test for URL's coverage and links coverage. Using Win Runner we can conduct web testing. But we have to make sure that Web test option is selected in "Add in Manager". Using WR we cannot test XML objects."""},
 
 199: {'What are the problems encountered during the testing the application compatibility on different browsers and on different operating systems?':"""
 Font issues, alignment issues"""},
