@@ -119,18 +119,21 @@ Xmax, Ymax = pyautogui.size()
 
 
 # Making loop for several mouse clicks
-while True:
-    # Move the mouse cursor to X,Y coordinates then click
-    # Variant 1 - using automatization with AutoPy
-    # autopy.mouse.smooth_move(int(0.5*Xmax),int(0.65*Ymax))
-    # autopy.mouse.click()
+try:
+    while True:
+        # Move the mouse cursor to X,Y coordinates then click
+        # Variant 1 - using automatization with AutoPy
+        # autopy.mouse.smooth_move(int(0.5*Xmax),int(0.65*Ymax))
+        # autopy.mouse.click()
 
-    # Variant 2 - using automatization with PyAutoGUI
-    pyautogui.moveTo(0.5*Xmax, (5/8.0)*Ymax, duration=1)
-    pyautogui.click()
-    time.sleep(1.5)
-
+        # Variant 2 - using automatization with PyAutoGUI
+        pyautogui.moveTo(0.5*Xmax, (5/8.0)*Ymax, duration=1)
+        pyautogui.click()
+        sleep(1.5)
+except pyautogui.FailSafeException:
+    print('Simulation has stopped. OK.')
+    sys.exit(0)
 
 # Written by Pavlin Georgiev
 # November 2015
-# Last update: 5 March 2018
+# Last update: 21 Dec 2018
