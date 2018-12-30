@@ -886,7 +886,11 @@ The common problems are:
 As I know it, test case design is about formulating the steps to be carried out to verify something about the application under test. And this cannot be automated. However, I agree that the process of putting the test results into the excel sheet."""},
 
 187: {'What are the limitations of automating software testing?': """
-Hard-to-create environments like “out of memory”, “invalid input/reply”, and “corrupt registry entries” make applications behave poorly and existing automated tools can’t force these condition - they simply test your application in “normal” environment."""},
+Hard-to-create environments like:
+  - “out of memory”
+  - “invalid input/reply”
+  - “corrupt registry entries”
+make applications behave poorly and existing automated tools can’t force these condition - they simply test your application in “normal” environment."""},
 
 188: {'What skills needed to be a good test automator?': """
   1) Good Logic for programming.
@@ -945,11 +949,11 @@ Severe memory leakages can be tested by using Endurance Testing . Endurance Test
 # Create a list of questions.
 question_list = QUESTION_DICT.keys()
 if not question_list:
-	sys.exit(1)
+    sys.exit(1)
 
 # Questions that have already been learned. Exclude them.
 # This is a list of dictionary keys used for QUESTION_DICT.
-exclusion_list = [16, 46]
+exclusion_list = [15, 16, 46, 94]
 for elem in exclusion_list:
     question_list.remove(elem)
 
