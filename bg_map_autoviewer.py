@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+
 # This script shows largest cities in Bulgaria on Google maps
 # using "street view" mode
 # For some cities there are several starting points when looking at the map
